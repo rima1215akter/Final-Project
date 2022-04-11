@@ -6,3 +6,15 @@
     line-height: 1.42857143;
     color: #333;
 }
+.nav-items{
+    font-size: 14px;
+}
+.search-panel{
+    min-height: 280px;
+}
+.category{
+    background-color:#eeeeee ;
+}
+.HOTJOBS{
+    background-color: #fff;
+}

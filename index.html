@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link rel="stylesheet" href="style.css">
-    <!-- CSS only -->
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- fontswesome -->
     <script src="https://kit.fontawesome.com/20bc6c66fe.js" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
                     <a class="nav-link" href="#">My Bdjobs</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">E-LEARNING</a>
+                    <a class="nav-link" href="#">E-Learning</a>
                   </li>       
                   <li class="nav-item">
                     <a class="nav-link" href="#">Tender/Eoi</a>
@@ -65,44 +65,363 @@
           </div>
           
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/logo.png" alt=""  class="d-inline-block ">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse gx-5" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-items ms-auto mb-2 mb-lg-0 d-flex align-items-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active" aria-current="page" href="#">Video Resume</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Career Resources 
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Career Guide</a></li>
+                  <li><a class="dropdown-item" href="#">Interview Tips</a></li>
+                  <li><a class="dropdown-item" href="#">Resume Writing Tips</a></li>
+                  <li><a class="dropdown-item" href="#">Cover Letter</a></li>
+                  <li><a class="dropdown-item" href="#">Articles</a></li>
+                  <li><a class="dropdown-item" href="#">Career Counseling<span class="badge" style="background-color: #b3003c;font-size: 12px; position: relative; line-height:10px; padding:1px 7px 2px 7px; margin:1px 0px 0px 4px;">new</span></a></li>
+                  <li><a class="dropdown-item" href="#">Education Guide</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link active" href="#">Sign in or Create Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Us</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
     </header>     
+
+    <main>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12">
+              <div class="search-panel">
+                <h2 class="pt-5" role="heading" aria-level="1">Find the right job</h2>
+                
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <section class="category">
+      <div class="jobCategory" style="height: auto !important;">
+        <div class="container" style="height: auto !important;">
+          <div class="row">
+            <div class="col-md-9 col-sm-12">
+                      
     
+    
+    
+    
+    
+    
+    <div class="tab padding-mobile fun-tab" role="region" aria-label="Category section">
+        <div class="tab-header padding-mobile">
+            <h2 class="m-text-center"><i class="icon-list"></i>&nbsp;Browse Category</h2>
+            <div class="tab-btn padding-mobile">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-funtional active">
+                      Functional                  
+                   </button>
+                   <button type="button" class="btn btn-default btn-industrial">
+                      Industrial                  
+                   </button>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="category-list padding-mobile functional active">
+      
+      
+            <div class="col-md-4 col-lg-4 category-col-1">
+                <ul>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=1&amp;icatId=" title="Accounting/Finance"><i class="icon-angle-right"></i> Accounting/Finance <span>(369)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=2&amp;icatId=" title="Bank/ Non-Bank Fin. Institution"><i class="icon-angle-right"></i> Bank/ Non-Bank Fin. Institution  <span>(89)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=3&amp;icatId=" title="Commercial/Supply Chain"><i class="icon-angle-right"></i> Commercial/Supply Chain <span>(174)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=4&amp;icatId=" title="Education/Training"><i class="icon-angle-right"></i> Education/Training <span>(296)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=5&amp;icatId=" title="Engineer/Architects"><i class="icon-angle-right"></i> Engineer/Architects <span>(394)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=6&amp;icatId=" title="Garments/Textile"><i class="icon-angle-right"></i> Garments/Textile <span>(465)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=17&amp;icatId=" title="HR/Org. Development"><i class="icon-angle-right"></i> HR/Org. Development <span>(162)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=7&amp;icatId=" title="Gen Mgt/Admin"><i class="icon-angle-right"></i> Gen Mgt/Admin <span>(291)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=18&amp;icatId=" title="Design/Creative"><i class="icon-angle-right"></i> Design/Creative <span>(70)</span></a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="col-md-4 col-lg-4 category-col-2 m-active">
+                <ul>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=19&amp;icatId=" title="Production/Operation"><i class="icon-angle-right"></i> Production/Operation <span>(94)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=20&amp;icatId=" title="Hospitality/ Travel/ Tourism"><i class="icon-angle-right"></i> Hospitality/ Travel/ Tourism <span>(104)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=21&amp;icatId=" title="Beauty Care/ Health &amp; Fitness"><i class="icon-angle-right"></i> Beauty Care/ Health &amp; Fitness <span>(16)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=23&amp;icatId=" title="Electrician/ Construction/ Repair"><i class="icon-angle-right"></i> Electrician/ Construction/ Repair <span>(40)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=8&amp;icatId=" title="IT &amp; Telecommunication"><i class="icon-angle-right"></i> IT &amp; Telecommunication <span>(407</span>)</a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=9&amp;icatId=" title="Marketing/Sales"><i class="icon-angle-right"></i> Marketing/Sales <span>(756</span>)</a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=16&amp;icatId=" title=" Customer Support/Call Centre"><i class="icon-angle-right"></i> Customer Support/Call Centre <span>(107)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=10&amp;icatId=" title="Media/Advertisement/Event Mgt."><i class="icon-angle-right"></i> Media/Ad./Event Mgt. <span>(57)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=11&amp;icatId=" title="Medical/Pharma"><i class="icon-angle-right"></i> Medical/Pharma <span>(209)</span></a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="col-md-4 col-lg-4 category-col-3 m-active">
+                <ul>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=26&amp;icatId=" title="Agro (Plant/Animal/Fisheries)"><i class="icon-angle-right"></i> Agro (Plant/Animal/Fisheries) <span>(75)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=12&amp;icatId=" title="NGO/Development"><i class="icon-angle-right"></i> NGO/Development <span>(260)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=13&amp;icatId=" title="Research/Consultancy"><i class="icon-angle-right"></i> Research/Consultancy <span>(43)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=14&amp;icatId=" title="Secretary/Receptionist"><i class="icon-angle-right"></i> Secretary/Receptionist <span>(55)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=15&amp;icatId=" title="Data Entry/Operator/BPO"><i class="icon-angle-right"></i> Data Entry/Operator/BPO <span>(58)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=25&amp;icatId=" title="Driving/Motor Technician"><i class="icon-angle-right"></i> Driving/Motor Technician <span>(31)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=24&amp;icatId=" title="Security/Support Service"><i class="icon-angle-right"></i> Security/Support Service <span>(50)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=22&amp;icatId=" title="Law/Legal"><i class="icon-angle-right"></i> Law/Legal <span>(34)</span></a>
+                    </li>
+                    <li>
+                        <a rel="noopener" target="_blank" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=-10&amp;icatId=" title="Others"><i class="icon-angle-right"></i> Others <span>(53)</span></a>
+                    </li>
+                </ul>
+            </div>
+        <div class="category-view fun-cat active">
+                <a class="btn btn-default more-cat hidden-md hidden-lg active">More&nbsp;<i class="icon-plus"></i></a>
+    
+                <a class="btn btn-default less-cat">Less&nbsp;<i class="icon-minus"></i></a>
+            </div>
+            
+        </div>
+    
+        <div class="category-list padding-mobile industrial">
+      
+    
+    
+            <div class="col-md-4 col-lg-4 category-col-1">
+                <ul>
+            
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=3" target="_blank" title="Agro based Industry"><i class="icon-angle-right"></i> Agro based Industry (93)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=5" target="_blank" title="Architecture/Engineering/Construction"><i class="icon-angle-right"></i> Archi./Engg./Construction (102)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=14" target="_blank" title="Automobile/Industrial Machine"><i class="icon-angle-right"></i> Automobile/Industrial Machine (30)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=1" target="_blank" title="Bank/Non-Bank Fin. Institution"><i class="icon-angle-right"></i> Bank/Non-Bank Fin. Institution (93)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=19" target="_blank" title="Education"><i class="icon-angle-right"></i> Education (259)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=8" target="_blank" title="Electronics/Consumer Durables"><i class="icon-angle-right"></i> Electronics/Consumer Durables (68) </a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=15" target="_blank" title="Energy/Power/Fuel"><i class="icon-angle-right"></i> Energy/Power/Fuel (33)</a></li>				
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=2" target="_blank" title="Garments/Textile"><i class="icon-angle-right"></i> Garments/Textile (670)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=18" target="_blank" title="Govt./Semi-Govt./Autonomous"><i class="icon-angle-right"></i> Govt./Semi-Govt./Autonomous  (330)</a></li> 
+            
+                </ul>
+            </div>
+            
+            <div class="col-md-4 col-lg-4 category-col-2 m-active">
+                <ul>
+    
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=4" target="_blank" title="Pharmaceuticals"><i class="icon-angle-right"></i>Pharmaceuticals (95)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=20" target="_blank" title="Hospital/ Diagnostic Center"><i class="icon-angle-right"></i> Hospital/ Diagnostic Center (118)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=21" target="_blank" title="Airline/ Travel/ Tourism"><i class="icon-angle-right"></i> Airline/ Travel/ Tourism (74)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=22" target="_blank" title="Manufacturing (Light Industry)"><i class="icon-angle-right"></i> Manufacturing (Light Industry) (41)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=7" target="_blank" title="Manufacturing (Heavy Industry)"><i class="icon-angle-right"></i> Manufacturing (Heavy Industry) (284)</a></li>
+          <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=13" target="_blank" title="Hotel/Restaurant"><i class="icon-angle-right"></i> Hotel/Restaurant (70)</a></li>        	 
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=11" target="_blank" title="Information Technology (IT)"><i class="icon-angle-right"></i> Information Technology (IT) (496)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=16" target="_blank" title="Logistics/ Transportation"><i class="icon-angle-right"></i> Logistics/ Transportation (50)</a></li>          
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=23" target="_blank" title="Entertainment/ Recreation"><i class="icon-angle-right"></i> Entertainment/ Recreation (16)</a></li>
+                
+    
+    
+                </ul>
+            </div>
+            
+            
+            
+            <div class="col-md-4 col-lg-4 category-col-3 m-active">
+                <ul>
+                
+                 <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=10" target="_blank" title="Media / Advertising/ Event Mgt."><i class="icon-angle-right"></i> Media / Advertising/ Event Mgt. (69)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=17" target="_blank" title="NGO/Development"><i class="icon-angle-right"></i> NGO/Development (300)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=6" target="_blank" title="Real Estate/Development"><i class="icon-angle-right"></i> Real Estate/Development (150)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=9" target="_blank" title="Wholesale/ Retail/ Export-Import"><i class="icon-angle-right"></i> Wholesale/ Retail/ Export-Import (182)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=12" target="_blank" title="Telecommunication"><i class="icon-angle-right"></i> Telecommunication (47)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=24" target="_blank" title="Food &amp; Beverage Industry"><i class="icon-angle-right"></i> Food &amp; Beverage Industry (62)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=25" target="_blank" title="Security Service"><i class="icon-angle-right"></i> Security Service (12)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=26" target="_blank" title="Fire, Safety &amp; Protection"><i class="icon-angle-right"></i> Fire, Safety &amp; Protection (8)</a></li>
+                <li><a rel="noopener" href="//jobs.bdjobs.com/jobsearch.asp?fcatId=&amp;icatId=-10" target="_blank" title="Others"><i class="icon-angle-right"></i> Others (569)</a></li>				
+            
+                </ul>
+            </div>
+    
+           <div class="category-view ind-cat">
+                <a class="btn btn-default more-cat hidden-md hidden-lg active">More&nbsp;<i class="icon-plus"></i></a>
+                <a class="btn btn-default less-cat">Less&nbsp;<i class="icon-minus"></i></a>
+            </div>
+    
+    
+          
+        </div>
+       
+    </div>
+              
+            </div>
+                    
+                    
+        <!-- Start government jobs -->
+                  
+    <div class="col-md-3 col-sm-12">
+    
+    <!--  new1 start -->
+    <div class="row">
+        <div class="col-md-12">
+    <!--  new1 end -->
+    
+     <!-- -- govt jobs (generated html) start--><div class="govtJobs sidebar-common" role="region" aria-label="Government jobs section"><h2><i class="icon-bd-map"></i>&nbsp;Govt Jobs</h2><div id="govtCarousel" class="carousel" aria-roledescription="carousel" aria-label="List of Government jobs"><div class="carousel-inner"><div id="govtCarousel-items" class="carousel-items" aria-live="off"><div role="group" aria-roledescription="slide" aria-label="1 of 8 " class="carousel-item"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269289',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269289&amp;ln=2"><span class="title-bn" title="" style="position: relative;">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">মালী</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269290',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269290&amp;ln=2"><span class="title-bn" title="" style="position: relative;">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">প্রদর্শনী প্রহরী</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269288',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269288&amp;ln=2"><span class="title-bn" title="" style="position: relative;">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">প্রহরী</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269285',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269285&amp;ln=2"><span class="title-bn" title="" style="position: relative;">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">কার্পেন্টার</span></a></div></div><div role="group" aria-roledescription="slide" aria-label="2 of 8 " class="carousel-item"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269287',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269287&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">অফিস সহায়ক</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269283',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269283&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">ডিসপ্লে এ্যাসিসটেন্ট</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269286',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269286&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="" style="position: relative;">অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269284',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269284&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">ড্রাইভার</span></a></div></div><div role="group" aria-roledescription="slide" aria-label="3 of 8 " class="carousel-item active"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269282',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269282&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">কনজারভেটর (প্রপস এন্ড কসটিউম)</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269281',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269281&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">উচ্চমান সহকারী</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269280',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269280&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">উচ্চমান সহকারী কাম হিসাব রক্ষক</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269279',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269279&amp;ln=2"><span class="title-bn" title="">বাংলাদেশ শিল্পকলা একাডেমী</span><span class="des-bn" title="">হিসাব সহকারী</span></a></div></div><div role="group" aria-roledescription="slide" aria-label="4 of 8 " class="carousel-item"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269276',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269276&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">গার্ড</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269275',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269275&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">মালী</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269274',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269274&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">পরিচ্ছন্নতাকর্মী</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269269',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269269&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">সুপারভাইজার</span></a></div></div><div role="group" aria-roledescription="slide" aria-label="5 of 8 " class="carousel-item"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269272',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269272&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">কমনরুম এটেনডেন্ট</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269273',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269273&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">সিক এটেনডেন্ট</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269270',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269270&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">অফিস এটেনডেন্ট</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269271',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269271&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">এম.এল.এস.এস</span></a></div></div><div role="group" aria-roledescription="slide" aria-label="6 of 8 " class="carousel-item"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269262',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269262&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="" style="position: relative;">উচ্চমান সহকারী কাম কম্পিউটার অপারেটর</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269265',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269265&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="লাইব্রেরী এসিস্ট্যান্ট কাম ডকুমেন্টেশন এসিস্ট্যান্ট" style="position: relative;">লাইব্রেরী এসিস্ট্যান্ট কাম ডকুমেন্টেশন এসিস্ট্যান্ট<span class="des-bn dots">...</span></span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269263',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269263&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="" style="position: relative;">উচ্চমান সহকারী কাম কম্পিউটার অপারেটর</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269266',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269266&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">এলডিএ কাম কম্পিউটার অপারেটর</span></a></div></div><div role="group" aria-roledescription="slide" aria-label="7 of 8 " class="carousel-item"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269267',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269267&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">স্টোর সহকারী</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269268',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269268&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="" style="position: relative;">হিসাব সহকারী কাম কম্পিউটার অপারেটর</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269264',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269264&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">সহকারী হিসাব রক্ষক</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269259',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269259&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">হিসাব রক্ষক</span></a></div></div><div role="group" aria-roledescription="slide" aria-label="8 of 8 " class="carousel-item"><div class="carousel-caption govt-job-list"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269260',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269260&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">পি.এ</span></a><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'Popular Jobs','Job No.:269261',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/jobdetails.asp?id=269261&amp;ln=2"><span class="title-bn" title="বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা" style="position: relative;">বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয়, ঢাকা<span class="title-bn dots">...</span></span><span class="des-bn" title="">উচ্চমান সহকারী</span></a></div></div></div> <!-- govtCarouselNewControls start -->    <div class="controls">                              <button class="rotation pause" aria-label="Stop automatic slide show">                                              <span class="pause"><span class="glyphicon glyphicon-pause"></span></span>    <span class="play"><span class="glyphicon glyphicon-play"></span></span>    </button>                               <button class="previous" aria-controls="govtCarousel-items" aria-label="Previous Slide">    <span class="icon-angle-left-l"></span>    </button>       <button class="next" aria-controls="govtCarousel-items" aria-label="Next Slide">    <span class="icon-angle-right-l"></span>    </button>                              </div>                                     <!-- govtCarouselNewControls end --></div><div class="vagjobs"><a rel="noopener" onclick="_gaq.push(['_trackEvent', 'Govt Jobs' , 'View All','All Jobs',1.00,true]);" target="_blank" href="//jobs.bdjobs.com/JobSearch.asp?fcatId=-1&amp;icatId=0&amp;requestType=government" class="btn btn-view-more no-border">View All (327)</a></div> </div></div><!-- -- govt jobs (generated html) end -->	
+    
+    
+    <!--  new2 start -->
+            </div>
+        </div>
+    <!--  new2 end -->
+    
+    <!--  new3 start -->
+    <div class="row">
+        <div class="col-md-12 hidden-sm hidden-xs">
+          <div class="ocusl-wrap" role="region" aria-label="i2i career pathway for persons with disabilities">
+            <div class="whalf mln">									
+                           
+                            <a rel="noopener" href="http://i2i.net.bd/" class="inhousc" target="_blank">                      
+                            <img class="img-responsive" src="/images/bdjobsHomeRight_2ColBanner_i2i.jpg" alt="Logo of i2i" title="i2i career pathway for persons with disabilities"></a>
+            </div>
+            <div class="whalf">
+                        
+    
+                         <a rel="noopener" href="http://mybdjobs.bdjobs.com/mybdjobs/armyproject/army_home.asp" class="inhousc" target="_blank"><img class="img-responsive" src="/images/Army-Banner.gif" alt="Logo of Army Welfare Trust and Bdjobs.com Ltd" title="Army Welfare Trust and Bdjobs.com Ltd"></a> 
+                        
+                        
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!--  new3 end -->
+    
+    </div>  
+    
+                        <script type="text/javascript">
+    
+              CarouselItem.prototype.show = function () {
+                        this.domNode.classList.add('active');
+                            govtJobDoted();
+                        };
+    
+                        function govtJobDoted() {
+                            $(".govtJobs .carousel-inner .carousel-items .carousel-item.active a>span,.fixedgovJobs a>span").each(function () {
+                                $(this).attr("title", "");
+                                $(this).find("span").remove();
+                                if (this.offsetWidth < this.scrollWidth) {
+                                    $(this).attr("title", this.innerHTML);
+                                    $(this).css("position", "relative").append("<span class='" + this.className + " dots' >...</span>");
+                                }
+                            });
+                        };
+    
+    
+                        $(document).ready(function () {                        
+                            $('#carousel-example-generic,#special-carasoul').bind('slid.bs.carousel', function (e) {
+                                govtJobDoted();
+                            });
+                            function govtJobDoted() {
+                                $(".govtJobs .carousel-inner .carousel-items .carousel-item.active a>span,.fixedgovJobs a>span").each(function () {
+                                    $(this).attr("title", "");
+                                    $(this).find("span").remove();
+                                    if (this.offsetWidth < this.scrollWidth) {
+                                        $(this).attr("title", this.innerHTML);
+                                        $(this).css("position", "relative").append("<span class='" + this.className + " dots' >...</span>");
+                                    }
+                                });
+                            }
+                            govtJobDoted();
+                            
+                            var gjitm = $(".govtJobs .carousel-inner .carousel-items .carousel-item").length;
+                            if (gjitm === 1) {
+                                $(".govtJobs .carousel-inner .controls").addClass("hide");
+                            }
+                        });
+    
+              </script>
+    
+            <!-- End government jobs -->
+    
+            <!--<div class="mobile-quick-links"></div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="HOTJOBS">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                    <h2 class="m-text-center">
+                      <span class="text-color:red">Hot</span>
+                      Jobs 
+                    </h2>
+              </div>
+            </div>
+          </div>
+    </section>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
