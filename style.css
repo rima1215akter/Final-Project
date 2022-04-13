@@ -5,6 +5,8 @@
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
+    padding-bottom: 80px ;
+    /* background-color: rgb(68, 65, 65); */
 }
 .nav-items{
     font-size: 14px;
@@ -18,3 +20,22 @@
 .HOTJOBS{
     background-color: #fff;
 }
+.social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: gray;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+.social-links a:hover{
+    background:rgb(39, 104, 224);
+    color: #fff;
+    text-decoration: none;
+  }
