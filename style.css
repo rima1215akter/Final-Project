@@ -1,7 +1,6 @@
 .topbar{
     width: 100%;
     color: #333;
-    
     font-size: 14px;
     /* background-color: rgb(68, 65, 65); */
 }
@@ -11,7 +10,14 @@
 .search-panel{
     min-height: 280px;
 }
+ul{
+    list-style-type: none;
+  }
 
+.skilledjobs .skilled li{
+    font-size: 16px;
+    text-decoration: none;
+}  
 .category{
     background-color:#eeeeee ;
 }
