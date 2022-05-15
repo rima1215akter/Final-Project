@@ -14,7 +14,7 @@ ul{
     list-style-type: none;
   }
 
-.skilledjobs .skilled li{
+.skilledjobs .skilled-item li{
     font-size: 16px;
     text-decoration: none;
 }  
