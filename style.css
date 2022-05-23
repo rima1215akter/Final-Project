@@ -43,3 +43,9 @@ ul{
     color: #fff;
     text-decoration: none;
   }
+.all-traning a{
+    display: block;
+    position: relative;
+    white-space: normal;
+    text-decoration: none;
+}  
