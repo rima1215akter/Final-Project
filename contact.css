@@ -1,0 +1,17 @@
+.dn-link {
+    font-size: 15px;
+    color: #2f64a3;
+    line-height: 28px;
+}
+.kw-wrap {
+    padding: 0px 0px 0px 0px;
+    margin: 15px 0px 20px 0px;
+    border: 1px solid #edebd7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+    background: #fffde7;
+    font-size: 14px;
+    box-sizing: border-box;
+}
