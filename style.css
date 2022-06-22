@@ -20,6 +20,31 @@ ul{
 .category{
     background-color:#eeeeee ;
 }
+/* Hot jobs */
+.box1{
+   display: flex;
+   width: 24%;
+   float: left;
+   border: 1px solid #DDDDDD;
+   border-right: 0;
+   background-color: #F5F5F5;
+   padding: 15px 10px 50px 15px;
+}
+.box2{
+	border-top: 0;
+	background-color: #fff;
+}
+.box{
+	border-right: 1px solid #DDDDDD;
+}
+.imgarea{
+   width: 25%;
+}
+.textarea{
+   width: 60%;
+   margin-left: 15px;
+}
+
 .HOTJOBS{
     background-color: #fff;
 }
