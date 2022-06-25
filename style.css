@@ -13,17 +13,18 @@
 ul{
     list-style-type: none;
   }
+.category{
+    background-color:#eeeeee ;
+}  
 .skilledjobs .skilled-item li{
     font-size: 16px;
     text-decoration: none;
 }  
-.category{
-    background-color:#eeeeee ;
-}
+
 /* Hot jobs */
 .box1{
    display: flex;
-   width: 24%;
+   width: 25%;
    float: left;
    border: 1px solid #DDDDDD;
    border-right: 0;
@@ -44,10 +45,7 @@ ul{
    width: 60%;
    margin-left: 15px;
 }
-
-.HOTJOBS{
-    background-color: #fff;
-}
+/* Hot jobs end*/
 .social-links a{
     font-size: 18px;
     display: inline-block;
@@ -125,3 +123,4 @@ ul{
      margin:0;
      padding-bottom: 4px;
   }
+    /* Under footer end */
