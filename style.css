@@ -7,6 +7,9 @@
 .nav-items{
     font-size: 14px;
 }
+.nav-item a:hover{
+   background-color: #eed3ea;
+}
 .search-panel{
     min-height: 280px;
 }
@@ -22,6 +25,9 @@ ul{
 }  
 
 /* Hot jobs */
+.hotjobs{
+  margin-bottom: 550px;
+}
 .box1{
    display: flex;
    width: 25%;
