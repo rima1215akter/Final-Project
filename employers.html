@@ -89,16 +89,16 @@
                                 <fieldset>
                                     <legend class="sr-only">Corporate Sign In</legend>
                                     <label for="NAME">
-                                        Username
-                                        <span class="required">
-                                        (required)
-                                        </span>
-                                
-                                        <div class="error-message" id="nameErrorMsg"></div>                            
-                                        
-                                        <input type="text" class="form-control" id="NAME" name="NAME" maxlength="40">
-                                
-                                    </label><br>
+                                      Username
+                                      <span class="required">
+                                      (required)
+                                      </span>
+                              
+                                      <!-- <div class="error-message" id="nameErrorMsg" aria-live="assertive">User Name field is blank! Please type your User Name properly.</div>                             -->
+                                      
+                                      <input type="text" class="form-control" id="NAME" name="NAME" maxlength="40">
+                              
+                                  </label><br>
                                 
                                     <label for="PASS">
                                         Password
@@ -106,9 +106,9 @@
                                         (required)
                                         </span>
                                 
-                                        <div class="error-message" id="passErrorMsg"></div>
+                                        <!-- <div class="error-message" id="passErrorMsg" aria-live="assertive">Password field is blank! Please type your Password properly.</div> -->
                                 
-                                        <input type="password" class="form-control" id="PASS" onfocus="synchronise()" name="PASS" maxlength="8">
+                                        <input type="text" class="form-control" id="NAME" name="NAME" maxlength="40">
                                     </label>
                                 </fieldset>
                             </div>
@@ -121,16 +121,16 @@
                                     </label>
                                 </div>                                
                             </div>
-    
-    
+
                             <div class="lgin-bottom">
-                                <input type="submit" id="sighIn" class="btn btn-default btn-block" value="Sign In">
-                            </div>
-                            <a class="hlp" href="#">Forgot Username <b>or</b> Password?</a>
+                              <input type="submit" id="sighIn" class="btn btn-default btn-block" value="Sign In">
+                          </div>
+
+                            <a class="hlp" href="Forget-Username-or-Password.html">Forgot Username <b>or</b> Password?</a>
                             <br><br>
                             <div class="reg-bottom">
                                 <div class="ins-txt">Register for your employer's account to get started.</div>
-                                <a href="#" class="ca">Create Account</a>
+                                <a href="#" class="ca" style="padding-left: 90px;">Create Account</a>
                             </div>
                             
                             <input name="JobNo" type="hidden" id="JobNo" value="">
