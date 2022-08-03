@@ -84,7 +84,7 @@
                    <div class="col-md-12 d-flex justify-content-center align-items-center">
                     <div class="lgin-info-right">
                         <h2>Corporate Sign In</h2>
-                        <form action="#" method="post" autocomplete="off" onsubmit="return IsPageValid();">
+                        <form class="needs-validation" action="#" method="post" autocomplete="off" onsubmit="return IsPageValid();">
                             <div class="lgin-top">
                                 <fieldset>
                                     <legend class="sr-only">Corporate Sign In</legend>
@@ -96,10 +96,10 @@
                               
                                       <!-- <div class="error-message" id="nameErrorMsg" aria-live="assertive">User Name field is blank! Please type your User Name properly.</div>                             -->
                                       
-                                      <input type="text" class="form-control" id="NAME" name="NAME" maxlength="40">
+                                      <input type="text" class="form-control" id="validationCustom03" required>
                               
                                   </label><br>
-                                
+                                  
                                     <label for="PASS">
                                         Password
                                         <span class="required">
@@ -108,7 +108,8 @@
                                 
                                         <!-- <div class="error-message" id="passErrorMsg" aria-live="assertive">Password field is blank! Please type your Password properly.</div> -->
                                 
-                                        <input type="text" class="form-control" id="NAME" name="NAME" maxlength="40">
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                        
                                     </label>
                                 </fieldset>
                             </div>
@@ -126,11 +127,11 @@
                               <input type="submit" id="sighIn" class="btn btn-default btn-block" value="Sign In">
                           </div>
 
-                            <a class="hlp" href="Forget-Username-or-Password.html">Forgot Username <b>or</b> Password?</a>
+                            <a class="hlp" href="Forgot-Username-or-Password.html">Forgot Username <b>or</b> Password?</a>
                             <br><br>
                             <div class="reg-bottom">
                                 <div class="ins-txt">Register for your employer's account to get started.</div>
-                                <a href="#" class="ca" style="padding-left: 90px;">Create Account</a>
+                                <a href="#" class="ca" style="display: flex; justify-content: center; align-items: center;">Create Account</a>
                             </div>
                             
                             <input name="JobNo" type="hidden" id="JobNo" value="">
