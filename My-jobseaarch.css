@@ -76,5 +76,25 @@ element.style {
 }
 .btn-block {
     display: block;
-    width: 50%;
+    width: 40%;
 }
+
+.social-signin-new .social-links .social-icon li a{
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: gray;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+.social-signin-new .social-links .social-icon li a:hover{
+    background:rgb(39, 104, 224);
+    color: #fff;
+    text-decoration: none;
+  }

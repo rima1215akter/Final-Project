@@ -59,8 +59,8 @@
   </nav>
 </header>
 
-<section class="signin-body">
-    <div class="container">
+<section class="signin-body mb-3">
+    <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
            <div class="col-md-12">
             <div class="signin-box">
@@ -73,10 +73,7 @@
                             <div id="mainform">
                                
                                 <form name="form1" method="post" id="form1" action="//mybdjobs.bdjobs.com/mybdjobs/signinprocess.asp">
-                
-                                    <div class="alert alert-danger  mt-20 hidden" aria-label="" id="errorMessage1">
-                                        
-                                    </div>
+    
                                     <div class="signin-form-container">
                                         <div class="signin-userid">
                                                 
@@ -111,12 +108,12 @@
                
                                             <div class="row">
                                                 <div class="checkbox-link">
-                                                    <div class="col-sm-4" style="padding-left: 40px;">
+                                                    <div class="col-sm-4 mt-3 mb-3" style="padding-left: 110px;">
                                                      
-                                                        <input type="submit" value="Next" class="btn btn-success btn-signin" onclick="return Validation();">
+                                                        <input type="submit" value="Next" style="width: 80px;" class="btn btn-success btn-signin" onclick="return Validation();">
                                                       
                                                     </div> 
-                                                    <div class="col-sm-8 fpassword">
+                                                    <div class="col-sm-8 fpassword mb-5">
                                                         <div class="">
                                                         
                                                        <!--<a href="http://mybdjobs.bdjobs.com/mybdjobs/forgot_UserID_Password.asp" target="_blank" onclick="ga('send', 'event', 'Forgot User id', 'click', '/mybdjobs/forgot_UserID_Password.asp', 1);">Forgot User ID/Password?</a> -->
@@ -132,15 +129,19 @@
                                 </form>
                                
                                
-                                <div class="social-signin-new">
+                                <!-- <div class="social-signin-new d-flex justify-content-center align-items-center">
+                                  <div class="text">
                                     <h3>Sign in with</h3>
+                                  </div>
+                                    <br>
+                                  <div class="social-links d-flex justify-content-center align-items-center">
                                     <ul class="social-icon">
-                                        <li><a rel="noopener" href="javascript:void(0);" id="fb_button" class="btn"><span class="sr-only">facebook login</span><i class="icon-facebook"></i></a></li>
-                                        <li><a rel="noopener" href="javascript:log_in();" id="gplus_button" class="btn"><span class="sr-only">google plus login</span><i class="icon-google-plus"></i></a></li>
-                                        <!-- <a href="javascript:void(0);" onclick="liAuth();" id="li_button" class="btn"><i class="icon-linkedin"></i></a> -->
+                                        <li><a rel="noopener" href="javascript:void(0);" id="fb_button" class="btn"><span class="sr-only">facebook login</span><i class="fab fa-facebook-square"></i></a></li>
+                                        <li><a rel="noopener" href="javascript:log_in();" id="linkedin_button" class="btn"><span class="sr-only">linkedin login</span><i class="fab fa-linkedin"></i></a></li>
                                         
                                     </ul>
-                                </div>
+                                  </div> 
+                                </div> -->
                               
                             </div>
                  </div>
