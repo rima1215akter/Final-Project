@@ -950,7 +950,7 @@
                                 <fieldset>
                                     <legend class="sr-only">Industry Type</legend>
                                     <!--test me:1-->
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-4 d-flex justify-content-between">
                                             <div class="checkbox chkIndustry" slno="13">
                                                 <input name="industry_type" id="industry_type13" slno="13" type="checkbox" value="13">
                                                 <label for="industry_type13" class="" slno="13" id="businessType13">Advertising Agency</label>
@@ -2572,56 +2572,11 @@
                         </div>
                     </section>
                     <hr>
-                    
-
                     <!-- <br> -->
-        <style>
-        .newDisLink
-          {
-            font-family:Arial, Helvetica, sans-serif; 
-            font-size:16px; 
-            line-height:1.5; 
-            font-weight:normal;
-            color:#212121;
-          }
-        .newDisLink a
-          {
-            color:#1976D2;
-          }
-        </style>
-        
-        <div class="newDisLink">
-          To learn more about <a href="https://corporate3.bdjobs.com/disability-inclusion-practices.asp" target="_blank">Disability Inclusion Practices at Workplace</a>
-        </div>
-
-                    <hr>
                     <section>
-                        <p>Verification Code </p>
-                        <div class="row">
-                            <div class="col-sm-4 col-md-2">
-                                <div class="form-group">
-                                    <img alt="Captcha" id="imgCaptcha" src="bdjobs_captcha.asp" tabindex="0" style="border: 1px solid #999999; margin: 7px 0px 5px 0px;">
-                                    <div class="refresh">
-                                        <a href="javascript:RefreshImage('imgCaptcha');"><i class="icon-refresh"></i>Refresh</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-8 col-md-4">
-                                
-                                <div class="form-group ">
-                                    <label for="txtCaptchaCode" class="visuallyhidden">Type given captcha code</label>
-                                    <input type="text" class="form-control" name="txtCaptchaCode" id="txtCaptchaCode" maxlength="6" placeholder="Type the verification code">
-                                    <p class="company-error-msg  "></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </section>
-                    <hr>
-                    <section>
-                        <div class="text-right">
-                            <button class="btn continue" onclick="return IsPricingPolicyAccepted_new(); ga('send', 'event', 'New Account', 'click', 'Continue', 1);" disabled=""> Continue <i class="icon-angle-right"></i></button>
+                        <div class="text-right d-flex justify-content-end align-items-end">
+                                <input type="submit" class="btn-continue" value="Continue">
+                            <!-- <button class="btn continue" onclick="return IsPricingPolicyAccepted_new(); ga('send', 'event', 'New Account', 'click', 'Continue', 1);" disabled=""> Continue <i class="icon-angle-right"></i></button> -->
                         </div>
                     </section>
                     <input type="hidden" name="hidEntrepreneur" id="hidEntrepreneur" value="">
