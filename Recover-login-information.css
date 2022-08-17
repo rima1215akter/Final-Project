@@ -1,0 +1,111 @@
+.signin-box{
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 20px 150px rgb(0 0 0 / 15%);
+    overflow: hidden;
+    
+}
+.signin-form {
+    padding: 40px;
+}
+.signin-user-wrapper {
+    margin: 0px 0 0 0;
+}
+.btn-back {
+    color: #595959;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    user-select: none;
+}
+
+.text-center {
+    text-align: center;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+.sr-only {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.radio-list .radio {
+    margin-bottom: 15px;
+}
+.checkbox, .radio {
+    display: block;
+    min-height: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.checkbox label, .radio label {
+    display: inline;
+    font-weight: 400;
+    cursor: pointer;
+}
+.radio+.radio {
+    margin-top: -5px;
+}
+
+.radio-list .radio {
+    margin-bottom: 15px;
+}
+.signin-form .text-danger {
+    font-size: 13px;
+    font-weight: 600;
+}
+.signin-box-footer {
+    margin-bottom: 40px;
+}
+.create-account {
+    background-color: #2f64a3;
+    color: #fff;
+    padding: 10px 30px 30px;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+.create-account h3 {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+.create-account .btn {
+    background-color: #fff;
+    color: #2f64a3;
+    border-radius: 50px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #fff;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
