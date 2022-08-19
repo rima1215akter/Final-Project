@@ -1,3 +1,204 @@
 .left-form{
     background-color: #fff;
-}    
+}
+.reg-form {
+    padding: 15px 30px 30px 30px;
+}
+.mob-cart {
+    padding: 0 0 23px 0;
+}
+.mob-cart h2 {
+    font-size: 20px;
+    color: #004db3;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 40px 40px 0 0;
+    font-weight: inherit;
+}
+.mob-cart h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+    padding: 0 20px 40px 0;
+    line-height: 1.5;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.cart-ac.cart-wc {
+    background: #fff url(https://mybdjobs.bdjobs.com/mybdjobs/images/gen.png) left top no-repeat;
+    background-size: auto;
+}
+.cart-ac.cart-wc:hover{
+    box-shadow: 5px 10px 12px #888888;
+}
+.cart-ac {
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1.428571429;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    padding: 18px 10px 18px 112px;
+    min-height: 130px;
+}
+.mob-cart a, .mob-cart a:active, .mob-cart a:hover {
+    text-decoration: none;
+    color: #000;
+}
+.cart-ac .cart-ac-cont .t-title.gen h2 {
+    color: #0b6041;
+}
+.cart-ac .cart-ac-cont .t-title h2 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    padding: 0px 0px 4px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.cart-ac .cart-ac-cont .p-examp {
+    color: #595959;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 0px 15px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.cart-ac .cart-ac-cont .ca-btn.wc .btn {
+    background-color: #f2f9f2;
+    color: #0b6041;
+}
+.cart-ac .cart-ac-cont .ca-btn.wc .btn:hover {
+    background-color: #0b6041;
+    color: #f2f9f2;
+}
+.cart-ac .cart-ac-cont .ca-btn .btn {
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+    user-select: none;
+}
+
+
+.tvlwrap {
+    position: relative;
+}
+.cart-ac.cart-bc {
+    background: #fff url(https://mybdjobs.bdjobs.com/mybdjobs/images/spsk.png) left top no-repeat;
+    background-size: auto;
+}
+.cart-ac.cart-bc:hover{
+    box-shadow: 5px 10px 12px #888888;
+}
+.cart-ac .cart-ac-cont .t-title.ss h2 {
+    color: #2f64a3;
+}
+
+.cart-ac .cart-ac-cont .t-title h2 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    padding: 0px 0px 4px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.cart-ac .cart-ac-cont .p-examp {
+    color: #595959;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 0px 15px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.cart-ac .cart-ac-cont .ca-btn.bc .btn {
+    background-color: #eef6ff;
+    color: #2f64a3;
+}
+.cart-ac .cart-ac-cont .ca-btn.bc .btn:hover {
+    background-color: #2f64a3;
+    color: #eef6ff;
+}
+.cart-ac .cart-ac-cont .ca-btn .btn {
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+    user-select: none;
+}
+
+
+.tvlwrap {
+    position: relative;
+}
+.cart-ac.cart-pwd {
+    background: #fff url(https://mybdjobs.bdjobs.com/mybdjobs/images/abfrn.png) left top no-repeat;
+    background-size: auto;
+}
+.cart-ac.cart-pwd:hover{
+    box-shadow: 5px 10px 12px #888888;
+}
+.cart-ac .cart-ac-cont .t-title.pwdf h2 {
+    color: #6035b1;
+}
+
+.cart-ac .cart-ac-cont .t-title h2 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    padding: 0px 0px 4px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.cart-ac .cart-ac-cont .p-examp {
+    color: #595959;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 0px 15px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.cart-ac .cart-ac-cont .ca-btn.pwdb .btn {
+    background-color: #f3effb;
+    color: #6035b1;
+}
+.cart-ac .cart-ac-cont .ca-btn.pwdb .btn:hover {
+    background-color: #6035b1;
+    color: #eef6ff;
+}
+.cart-ac .cart-ac-cont .ca-btn .btn {
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+    user-select: none;
+}
