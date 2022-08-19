@@ -202,3 +202,63 @@
     border-radius: 4px;
     user-select: none;
 }
+/* sidebar */
+.help-area, .aregister {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #bdbdbd;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.help-area h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.help-area p {
+    padding-top: 15px;
+    line-height: 24px;
+}
+.help-area h3.phone-number {
+    color: #da381b;
+}
+
+.help-area h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0px 10px 0px;
+    padding-left: 0;
+}
+.help-area h3.email-address {
+    color: #004db3;
+}
+
+.help-area h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0px 10px 0px;
+    padding-left: 0;
+}
+.registred{
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #bdbdbd;
+    border-radius: 2px;
+}
+.registred {
+    text-align: center;
+    background-image: url(https://mybdjobs.bdjobs.com/mybdjobs/images/cbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+}
+.siginbutton, .button{
+    background-color: #004db3;
+    color: #fff;
+    border-radius: 2px;
+}
+.siginbutton, .button:hover{
+    background-color: #637c9d;
+    color: #fff;
+}
