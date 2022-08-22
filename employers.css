@@ -1,4 +1,4 @@
-.login-body .lgin-info-right .lgin-bottom .btn {
+.signin-body .signin-box .lgin-info-right .lgin-bottom .btn {
     background-color: #0E73A9;
     color: #ffffff;
     border-radius: 50px;
@@ -8,17 +8,38 @@
     font-size: 16px;
     font-weight: 600;
     border: none;
-    width: 100%;
+    width: 60%;
 }
 
-.login-body .lgin-info-right .error-message {
+.signin-body .signin-box .signin-form{
+    background-color: rgb(180, 168, 168);
+    border-radius: 2px;
+    box-shadow: 0 20px 150px rgb(0 0 0 / 15%);
+    overflow: hidden; 
+    
+}
+.signin-form {
+    padding: 25px 30px;
+}
+.lgin-info-right {
+    margin: 0 0 20px 0;
+}
+/* .session-authentication .auth-form-body {
+    border-top: 1px solid var(--color-border-muted);
+    border-radius: 6px;
+}
+
+.auth-form-body {
+    padding: 16px;
+    font-size: 14px;
+    background-color: var(--color-canvas-subtle);
+    border: 1px solid var(--color-border-muted);
+    border-top: 0;
+    border-radius: 0 0 6px 6px;
+} */
+.signin-body .lgin-info-right .error-message {
     color: #DA381B;
     font-style: italic;
     line-height: 1.5;
     margin-bottom: 5px;
-}
-
-button, html input[type=button], input[type=reset], input[type=submit] {
-    -webkit-appearance: button;
-    cursor: pointer;
 }
