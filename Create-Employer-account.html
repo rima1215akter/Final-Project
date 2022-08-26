@@ -54,82 +54,70 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse gx-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav-items ms-auto mb-2 mb-lg-0 d-flex align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Sign in or Create Account</a>  
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html"><i class="fa fa-phone me-1"></i>Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
     </header>            
-
-<section style="background-color: white;" class="Employeraccount container">
-  <div class="container" id="main" role="main">
-    <div class="row">
-        <div class="col-md-12">
-            
-                <!--
-                <div style="width: 90%;background-color: #8bc34a2e;border: 1px dashed #999999;color: #FF0000;padding-left: 10px;padding-right: 10px;padding-top: 0;padding-bottom: 0px;margin-left: 55px;">
-                    <strong><u>Following Error occurred:</u></strong>
-                    <ul></ul>
-                </div>
-              <br />
-                -->
-            
-            <div class="job-board emp-reg-form pt-3">
-                <h3 class="page-title">Employer Registration Form</h3>
-                <form name="frmCorporateNewAccount" id="frmCorporateNewAccount" method="post" action="corporate_insert.asp" onsubmit="return FormValidation(''); ">
-                    <section>
-                        <h3 class="sec-title">Account Information</h3>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group" id="username">
-                                    <label for="txtUserName">Username*</label>
-                                    <input type="text" class="form-control username" name="txtUserName" id="txtUserName" maxlength="20" placeholder="Type Username" style="" value="">
-                                    <p class="user-error-msg"></p>
+    <!-- Employeraccount section start -->
+    <section style="background-color: white;" class="Employeraccount container mt-3 mb-3">
+        <div class="container" id="main" role="main">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--
+                    <div style="width: 90%;background-color: #8bc34a2e;border: 1px dashed #999999;color: #FF0000;padding-left: 10px;padding-right: 10px;padding-top: 0;padding-bottom: 0px;margin-left: 55px;">
+                        <strong><u>Following Error occurred:</u></strong>
+                        <ul></ul>
+                    </div>
+                    <br />
+                    -->
+                    <div class="job-board emp-reg-form pt-3">
+                        <h3 class="page-title">Employer Registration Form</h3>
+                        <form name="frmCorporateNewAccount" id="frmCorporateNewAccount" method="post" action="corporate_insert.asp" onsubmit="return FormValidation(''); ">
+                            <section>
+                                <h3 class="sec-title">Account Information</h3>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group" id="username">
+                                            <label for="txtUserName">Username*</label>
+                                            <input type="text" class="form-control username" name="txtUserName" id="txtUserName" maxlength="20" placeholder="Type Username" style="" value="">
+                                            <p class="user-error-msg"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="txtPassword">Password*</label>
+                                            <input type="password" class="form-control" maxlength="8" name="txtPassword" id="txtPassword" placeholder="Use maximum 8 characters" style="">
+                                            <p class="user-error-msg"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="txtConfirmPassword">Confirm Password*</label>
+                                            <input type="password" class="form-control" maxlength="8" name="txtConfirmPassword" id="txtConfirmPassword" placeholder="Retype password" style="">
+                                            <p class="user-error-msg"></p>
+                                        </div>
+                                    </div>
+                            </div>
+                            </section>
+                            <hr>
+                            <section>
+                            <h3 class="sec-title">Company Details Information</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group" id="companyname">
+                                        <label for="txtCompanyName">Company Name*</label>
+                                        <input type="text" class="form-control companyname" id="txtCompanyName" name="txtCompanyName" maxlength="120" placeholder="Type Company Name" style="" value="">
+                                        <p class="company-error-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="txtCompanyBangla" class="bn">কোম্পানির নাম (বাংলায়)</label>
+                                        <input type="text" class="form-control" name="txtCompanyBangla" id="txtCompanyBangla" maxlength="120" placeholder="কোম্পানির নাম বাংলায় লিখুন" style="" value="">
+                                    
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="txtPassword">Password*</label>
-                                    <input type="password" class="form-control" maxlength="8" name="txtPassword" id="txtPassword" placeholder="Use maximum 8 characters" style="">
-                                    <p class="user-error-msg"></p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="txtConfirmPassword">Confirm Password*</label>
-                                    <input type="password" class="form-control" maxlength="8" name="txtConfirmPassword" id="txtConfirmPassword" placeholder="Retype password" style="">
-                                    <p class="user-error-msg"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <hr>
-                    <section>
-                        <h3 class="sec-title">Company Details Information</h3>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group" id="companyname">
-                                    <label for="txtCompanyName">Company Name*</label>
-                                    <input type="text" class="form-control companyname" id="txtCompanyName" name="txtCompanyName" maxlength="120" placeholder="Type Company Name" style="" value="">
-                                    <p class="company-error-msg"></p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="txtCompanyBangla" class="bn">কোম্পানির নাম (বাংলায়)</label>
-                                    <input type="text" class="form-control" name="txtCompanyBangla" id="txtCompanyBangla" maxlength="120" placeholder="কোম্পানির নাম বাংলায় লিখুন" style="" value="">
-                                
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="row">
+                            <!-- <div class="row">
                             <div class="col-sm-12">
                                 <div class="arynent-wrap">
                                     <fieldset>
@@ -160,48 +148,48 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group" id="CompanyEstablished">
-                                    <label for="txtCompanyEstablished">Year of Establishment
-                                    <!-- <span class="manf">*</span> -->
-                                    </label>
-                                    <input type="text" class="form-control" id="txtCompanyEstablished" name="txtCompanyEstablished" maxlength="4" onkeypress="return isNumberKey(event)" placeholder="Type Company's Establishment Year, e.g. 2003" value="">
-                                    <p class="company-error-msg"></p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group" id="CompanyEmp">
-                                    <label for="ComSize">Company Size
-                                    <!-- <span class="manf">*</span> -->
-                                    </label>
-                                    <select class="form-control" name="ComSize" id="ComSize">
-                                        <option value="-1">Select Company Size</option>
-                                        <option value="1-15">1-15 employees</option>
-                                        <option value="16-30">16-30 employees</option>
-                                        <option value="31-50">31-50 employees</option>
-                                        <option value="51-120">51-120 employees</option>
-                                        <option value="121-300">121-300 employees</option>
-                                        <option value="301-500">301-500 employees</option>
-                                        <option value="501-1000">501-1000 employees</option>
-                                        <option value="1001-5000">1001-5000 employees</option>
-                                        <option value="5001-10000">5001-10000 employees</option>
-                                        <option value="10000-0">10000+ employees</option>
-                                    </select>
-                                    <p class="company-error-msg"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <h4 class="company-address">Company Address*</h4>
-                        <div class="address-wrap">                                                            
+                            </div> -->
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="Country" class="visuallyhidden">Select Country</label>
-                                        <select class="form-control" name="Country" id="Country">
-                                            <option value="-1">Select Country</option>
-                                            
+                                <div class="col-sm-6">
+                                    <div class="form-group" id="CompanyEstablished">
+                                        <label for="txtCompanyEstablished">Year of Establishment
+                                        <!-- <span class="manf">*</span> -->
+                                        </label>
+                                        <input type="text" class="form-control" id="txtCompanyEstablished" name="txtCompanyEstablished" maxlength="4" onkeypress="return isNumberKey(event)" placeholder="Type Company's Establishment Year, e.g. 2003" value="">
+                                        <p class="company-error-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group" id="CompanyEmp">
+                                        <label for="ComSize">Company Size
+                                        <!-- <span class="manf">*</span> -->
+                                        </label>
+                                        <select class="form-control" name="ComSize" id="ComSize">
+                                            <option value="-1">Select Company Size</option>
+                                            <option value="1-15">1-15 employees</option>
+                                            <option value="16-30">16-30 employees</option>
+                                            <option value="31-50">31-50 employees</option>
+                                            <option value="51-120">51-120 employees</option>
+                                            <option value="121-300">121-300 employees</option>
+                                            <option value="301-500">301-500 employees</option>
+                                            <option value="501-1000">501-1000 employees</option>
+                                            <option value="1001-5000">1001-5000 employees</option>
+                                            <option value="5001-10000">5001-10000 employees</option>
+                                            <option value="10000-0">10000+ employees</option>
+                                        </select>
+                                        <p class="company-error-msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="company-address">Company Address*</h4>
+                            <div class="address-wrap">                                                            
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="Country" class="visuallyhidden">Select Country</label>
+                                            <select class="form-control" name="Country" id="Country">
+                                                <option value="-1">Select Country</option>
+                                                
                                                     <option value="101##Afghanistan">Afghanistan</option>
                                                 
                                                     <option value="102##Albania">Albania</option>
@@ -653,153 +641,150 @@
                                                     <option value="322##Zambia">Zambia</option>
                                                 
                                                     <option value="326##Zimbabwe">Zimbabwe</option>
-                                                
-                                        </select>
-                                        <p class="company-error-msg"></p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-sm-6 select-wrap ">
-                                    <div class="form-group">
-                                        <label for="cboCity" class="visuallyhidden">Select District</label>
-                                        <select class="form-control" name="cboCity" id="cboCity">
-                                            
-                                                    <option value="-1">Select District</option>
                                                     
-                                                        <option value="2##Bagerhat">Bagerhat</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="3##Bandarban">Bandarban</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="7##Barguna">Barguna</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="4##Barishal">Barishal</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="5##Bhola">Bhola</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="6##Bogura">Bogura</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="1##Brahmanbaria">Brahmanbaria</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="8##Chandpur">Chandpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="9##Chapainawabganj">Chapainawabganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="10##Chattogram">Chattogram</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="11##Chuadanga">Chuadanga</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="13##Cox's Bazar">Cox's Bazar</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="12##Cumilla">Cumilla</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="14##Dhaka">Dhaka</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="15##Dinajpur">Dinajpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="16##Faridpur">Faridpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="17##Feni">Feni</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="18##Gaibandha">Gaibandha</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="19##Gazipur">Gazipur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="20##Gopalganj">Gopalganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="21##Habiganj">Habiganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="22##Jamalpur">Jamalpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="23##Jashore">Jashore</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="24##Jhalakathi">Jhalakathi</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="25##Jhenaidah">Jhenaidah</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="26##Joypurhat">Joypurhat</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="27##Khagrachhari">Khagrachhari</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="28##Khulna">Khulna</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="29##Kishoreganj">Kishoreganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="30##Kurigram">Kurigram</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="31##Kushtia">Kushtia</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="33##Laksmipur">Laksmipur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="32##Lalmonirhat">Lalmonirhat</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="34##Madaripur">Madaripur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="35##Magura">Magura</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="36##Manikganj">Manikganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="37##Meherpur">Meherpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="38##Moulvibazar">Moulvibazar</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="39##Munshiganj">Munshiganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="40##Mymensingh">Mymensingh</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="41##Naogaon">Naogaon</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="42##Narail">Narail</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="43##Narayanganj">Narayanganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="44##Narsingdi">Narsingdi</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="45##Natore">Natore</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="46##Netrokona">Netrokona</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="47##Nilphamari">Nilphamari</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="48##Noakhali">Noakhali</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="49##Pabna">Pabna</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="50##Panchagarh">Panchagarh</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="51##Patuakhali">Patuakhali</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="52##Pirojpur">Pirojpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="53##Rajbari">Rajbari</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="54##Rajshahi">Rajshahi</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="55##Rangamati">Rangamati</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="56##Rangpur">Rangpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="57##Satkhira">Satkhira</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="58##Shariatpur">Shariatpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="59##Sherpur">Sherpur</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="60##Sirajganj">Sirajganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="61##Sunamganj">Sunamganj</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="62##Sylhet">Sylhet</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="63##Tangail">Tangail</option>
-                                                         <!--selected="selected"--> 
-                                                        <option value="64##Thakurgaon">Thakurgaon</option>
-                                                         <!--selected="selected"--> 
-                                        </select>
-                                        <p class="company-error-msg"></p>
+                                            </select>
+                                            <p class="company-error-msg"></p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-6 select-wrap ">
+                                        <div class="form-group">
+                                            <label for="cboCity" class="visuallyhidden">Select District</label>
+                                            <select class="form-control" name="cboCity" id="cboCity">
+                                                <option value="-1">Select District</option>
+                                                     <option value="2##Bagerhat">Bagerhat</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="3##Bandarban">Bandarban</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="7##Barguna">Barguna</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="4##Barishal">Barishal</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="5##Bhola">Bhola</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="6##Bogura">Bogura</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="1##Brahmanbaria">Brahmanbaria</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="8##Chandpur">Chandpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="9##Chapainawabganj">Chapainawabganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="10##Chattogram">Chattogram</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="11##Chuadanga">Chuadanga</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="13##Cox's Bazar">Cox's Bazar</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="12##Cumilla">Cumilla</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="14##Dhaka">Dhaka</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="15##Dinajpur">Dinajpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="16##Faridpur">Faridpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="17##Feni">Feni</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="18##Gaibandha">Gaibandha</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="19##Gazipur">Gazipur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="20##Gopalganj">Gopalganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="21##Habiganj">Habiganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="22##Jamalpur">Jamalpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="23##Jashore">Jashore</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="24##Jhalakathi">Jhalakathi</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="25##Jhenaidah">Jhenaidah</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="26##Joypurhat">Joypurhat</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="27##Khagrachhari">Khagrachhari</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="28##Khulna">Khulna</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="29##Kishoreganj">Kishoreganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="30##Kurigram">Kurigram</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="31##Kushtia">Kushtia</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="33##Laksmipur">Laksmipur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="32##Lalmonirhat">Lalmonirhat</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="34##Madaripur">Madaripur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="35##Magura">Magura</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="36##Manikganj">Manikganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="37##Meherpur">Meherpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="38##Moulvibazar">Moulvibazar</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="39##Munshiganj">Munshiganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="40##Mymensingh">Mymensingh</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="41##Naogaon">Naogaon</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="42##Narail">Narail</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="43##Narayanganj">Narayanganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="44##Narsingdi">Narsingdi</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="45##Natore">Natore</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="46##Netrokona">Netrokona</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="47##Nilphamari">Nilphamari</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="48##Noakhali">Noakhali</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="49##Pabna">Pabna</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="50##Panchagarh">Panchagarh</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="51##Patuakhali">Patuakhali</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="52##Pirojpur">Pirojpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="53##Rajbari">Rajbari</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="54##Rajshahi">Rajshahi</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="55##Rangamati">Rangamati</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="56##Rangpur">Rangpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="57##Satkhira">Satkhira</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="58##Shariatpur">Shariatpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="59##Sherpur">Sherpur</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="60##Sirajganj">Sirajganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="61##Sunamganj">Sunamganj</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="62##Sylhet">Sylhet</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="63##Tangail">Tangail</option>
+                                                      <!--selected="selected"--> 
+                                                     <option value="64##Thakurgaon">Thakurgaon</option>
+                                                             <!--selected="selected"--> 
+                                            </select>
+                                            <p class="company-error-msg"></p>
+                                        </div>
+                                    </div>
                                 <div class="col-sm-6 select-wrap ">
                                     <div class="form-group">
                                         <label for="cboArea" class="visuallyhidden">Select thana</label>
@@ -812,26 +797,24 @@
                                         <p class="company-error-msg"></p>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-6 select-wrap ">
-                                    <div class="form-group">
-                                        <label for="txtCompanyAddress" class="visuallyhidden">Write company address in english</label>
-                                        <textarea class="form-control" rows="3" name="txtCompanyAddress" id="txtCompanyAddress" maxlength="300" placeholder="Write Company Address"></textarea>
-                                        <p class="company-error-msg"></p>
-                                    </div>
                                 </div>
-                                <div class="col-sm-6 select-wrap ">
-                                    <div class="form-group">
-                                        <label for="txtCompanyAddressBng" class="visuallyhidden">Write company address in bangla</label>
-                                        <textarea class="form-control" rows="3" name="txtCompanyAddressBng" id="txtCompanyAddressBng" maxlength="300" placeholder="কোম্পানীর ঠিকানা বাংলায় লিখুন "></textarea>
-                                        <p class="company-error-msg"></p>
+                                <div class="row">
+                                    <div class="col-sm-6 select-wrap ">
+                                        <div class="form-group">
+                                            <label for="txtCompanyAddress" class="visuallyhidden">Write company address in english</label>
+                                            <textarea class="form-control" rows="3" name="txtCompanyAddress" id="txtCompanyAddress" maxlength="300" placeholder="Write Company Address"></textarea>
+                                            <p class="company-error-msg"></p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>                                                   
-                            <div class="select-country hide">
-                        
+                                    <div class="col-sm-6 select-wrap ">
+                                        <div class="form-group">
+                                            <label for="txtCompanyAddressBng" class="visuallyhidden">Write company address in bangla</label>
+                                            <textarea class="form-control" rows="3" name="txtCompanyAddressBng" id="txtCompanyAddressBng" maxlength="300" placeholder="কোম্পানীর ঠিকানা বাংলায় লিখুন "></textarea>
+                                            <p class="company-error-msg"></p>
+                                        </div>
+                                    </div>
+                                </div>                                                   
+                                <div class="select-country hide">
                                 <div class="form-group">
                                     <label for="txtOutSideCity" class="visuallyhidden">Write city</label>
                                     <input type="text" class="form-control" name="txtOutSideCity" id="txtOutSideCity" maxlength="30" placeholder="Write City" value="">
@@ -849,115 +832,110 @@
                                         <!--<p class="company-error-msg"></p>-->
                                     </div>
                                 </div>
-                            </div>
-                            <!--this is testing html end-->
-                        </div>
-                        <h4 class="industry-type">Industry Type*</h4>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="optIndustryType" class="visuallyhidden">Select Industry Type</label>
-                                    <select class="form-control" name="optIndustryType" id="optIndustryType">
-                                        <option value="-1">Select Category</option>
-                                         
-                                            
-                                            <option value="3">Agro based Industry</option>
-                                         
-                                            
-                                            <option value="21">Airline/ Travel/ Tourism </option>
-                                         
-                                            
-                                            <option value="5">Architecture/ Engineering/ Construction</option>
-                                         
-                                            
-                                            <option value="14">Automobile/Industrial Machine</option>
-                                         
-                                            
-                                            <option value="1">Bank/ Non-Bank Fin. Institution</option>
-                                         
-                                            
-                                            <option value="19">Education</option>
-                                         
-                                            
-                                            <option value="8">Electronics/ Consumer Durables</option>
-                                         
-                                            
-                                            <option value="15">Energy/ Power/ Fuel</option>
-                                         
-                                            
-                                            <option value="23">Entertainment/ Recreation</option>
-                                         
-                                            
-                                            <option value="26">Fire, Safety &amp; Protection</option>
-                                         
-                                            
-                                            <option value="24">Food &amp; Beverage Industry</option>
-                                         
-                                            
-                                            <option value="2">Garments/ Textile</option>
-                                         
-                                            
-                                            <option value="18">Govt./ Semi-Govt./ Autonomous</option>
-                                         
-                                            
-                                            <option value="20">Hospital/ Diagnostic Center </option>
-                                         
-                                            
-                                            <option value="13">Hotel/Restaurant</option>
-                                         
-                                            
-                                            <option value="11">Information Technology (IT)</option>
-                                         
-                                            
-                                            <option value="16">Logistics/ Transportation</option>
-                                         
-                                            
-                                            <option value="7">Manufacturing (Heavy Industry)</option>
-                                         
-                                            
-                                            <option value="22">Manufacturing (Light Industry) </option>
-                                         
-                                            
-                                            <option value="10">Media (Satellite/ Print/ Online)/ Advertising/ Event Mgt.</option>
-                                         
-                                            
-                                            <option value="17">NGO/Development</option>
-                                         
-                                            
-                                            <option value="4">Pharmaceuticals</option>
-                                         
-                                            
-                                            <option value="6">Real Estate/ Development</option>
-                                         
-                                            
-                                            <option value="25">Security Service</option>
-                                         
-                                            
-                                            <option value="12">Telecommunication</option>
-                                         
-                                            
-                                            <option value="9">Wholesale/ Retail/ Export-Import</option>
-                                        
-                                            <option value="-10">Others</option>
-                                        
-                                        
-                                    </select>
-                                    
                                 </div>
+                                <!--this is testing html end-->
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="txtOrganizationName" class="visuallyhidden">Search Industry Type</label>
-                                    <input type="text" class="form-control" id="txtOrganizationName" name="txtOrganizationName" placeholder="Search IndustryType" value="">
+                            <h4 class="industry-type">Industry Type*</h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="optIndustryType" class="visuallyhidden">Select Industry Type</label>
+                                        <select class="form-control" name="optIndustryType" id="optIndustryType">
+                                            <option value="-1">Select Category</option>
+                                             
+                                                
+                                                <option value="3">Agro based Industry</option>
+                                             
+                                                
+                                                <option value="21">Airline/ Travel/ Tourism </option>
+                                             
+                                                
+                                                <option value="5">Architecture/ Engineering/ Construction</option>
+                                             
+                                                
+                                                <option value="14">Automobile/Industrial Machine</option>
+                                             
+                                                
+                                                <option value="1">Bank/ Non-Bank Fin. Institution</option>
+                                             
+                                                
+                                                <option value="19">Education</option>
+                                             
+                                                
+                                                <option value="8">Electronics/ Consumer Durables</option>
+                                             
+                                                
+                                                <option value="15">Energy/ Power/ Fuel</option>
+                                             
+                                                
+                                                <option value="23">Entertainment/ Recreation</option>
+                                             
+                                                
+                                                <option value="26">Fire, Safety &amp; Protection</option>
+                                             
+                                                
+                                                <option value="24">Food &amp; Beverage Industry</option>
+                                             
+                                                
+                                                <option value="2">Garments/ Textile</option>
+                                             
+                                                
+                                                <option value="18">Govt./ Semi-Govt./ Autonomous</option>
+                                             
+                                                
+                                                <option value="20">Hospital/ Diagnostic Center </option>
+                                             
+                                                
+                                                <option value="13">Hotel/Restaurant</option>
+                                             
+                                                
+                                                <option value="11">Information Technology (IT)</option>
+                                             
+                                                
+                                                <option value="16">Logistics/ Transportation</option>
+                                             
+                                                
+                                                <option value="7">Manufacturing (Heavy Industry)</option>
+                                             
+                                                
+                                                <option value="22">Manufacturing (Light Industry) </option>
+                                             
+                                                
+                                                <option value="10">Media (Satellite/ Print/ Online)/ Advertising/ Event Mgt.</option>
+                                             
+                                                
+                                                <option value="17">NGO/Development</option>
+                                             
+                                                
+                                                <option value="4">Pharmaceuticals</option>
+                                             
+                                                
+                                                <option value="6">Real Estate/ Development</option>
+                                             
+                                                
+                                                <option value="25">Security Service</option>
+                                             
+                                                
+                                                <option value="12">Telecommunication</option>
+                                             
+                                                
+                                                <option value="9">Wholesale/ Retail/ Export-Import</option>
+                                            
+                                                <option value="-10">Others</option>
+                                        </select>
+                                    </div>
                                 </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="txtOrganizationName" class="visuallyhidden">Search Industry Type</label>
+                                        <input type="text" class="form-control" id="txtOrganizationName" name="txtOrganizationName" placeholder="Search IndustryType" value="">
+                                    </div>
                             </div>
-                        </div>
-                        
-                        <div class="industrys-wrap error-industry">
-                            <div class="row industrys">
-                                
-                                <fieldset>
-                                    <legend class="sr-only">Industry Type</legend>
+                            </div>
+                            <div class="industrys-wrap error-industry">
+                                <div class="row industrys">
+                                    <fieldset>
+                                        <legend class="sr-only">Industry Type</legend>
                                     <!--test me:1-->
                                         <div class="col-sm-4">
                                             <div class="checkbox chkIndustry" slno="13">
@@ -2492,120 +2470,117 @@
                                             </div>
                                         </div>
                                     
-                                </fieldset>
-                                
+                                    </fieldset>
+                                </div>
                             </div>
-                            
-                        </div>
-                        <p class="company-error-msg" id="IndustryTypeErr"></p>
-                        <div class="selected-industrys" id="selectedItems">
-                            <ul>
-                                
-                            </ul>
+                            <p class="company-error-msg" id="IndustryTypeErr"></p>
+                            <div class="selected-industrys" id="selectedItems">
                             <input name="hidIndustryTypes" id="hidIndustryTypes" value="" type="hidden">
-                        </div>
-                        <div class="business">
-                            <div class="form-group">
-                                <label for="txtDescription">Business Description</label>
-                                <textarea class="form-control" rows="4" name="txtDescription" id="txtDescription" placeholder="Write Business Description"></textarea>
+                            </div>
+                            <div class="business">
+                                <div class="form-group">
+                                    <label for="txtDescription">Business Description</label>
+                                    <textarea class="form-control" rows="4" name="txtDescription" id="txtDescription" placeholder="Write Business Description"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="business_license_no">Business/ Trade License No</label>
+                                            <input type="text" class="form-control" maxlength="30" name="business_license_no" id="business_license_no" placeholder="Business/ Trade License No" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="rl_no">RL No (Only for Recruiting Agency)</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">RL -</span>
+                                                <input type="text" class="form-control" maxlength="6" name="rl_no" id="rl_no" placeholder="Enter Number Only" value="" onkeypress="return isNumberKey(event)" onchange="return CheckNumber($('#rl_no').val())">
+                                            </div>
+                                            <input name="hidRLNOStatus" id="hidRLNOStatus" value="" type="hidden">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="website_url">Website URL</label>
+                                            <input type="text" class="form-control" maxlength="50" name="website_url" id="website_url" placeholder="Type Website URL" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </section>
+                            <hr>
+                            <section>
+                            <h3 class="sec-title">Contact</h3>
+                            <h4 class="primary-contact">Primary Contact</h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="txtContactPerson">Contact Person's Name*</label>
+                                        <input type="text" class="form-control" maxlength="100" name="txtContactPerson" id="txtContactPerson" placeholder="Type contact person's name" style="" value="">
+                                        <p class="company-error-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="txtDesignation">Contact Person's Designation*</label>
+                                        <input type="text" class="form-control" maxlength="100" name="txtDesignation" id="txtDesignation" placeholder="Type contact person's designation" style="" value="">
+                                        <p class="company-error-msg"></p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="business_license_no">Business/ Trade License No</label>
-                                        <input type="text" class="form-control" maxlength="30" name="business_license_no" id="business_license_no" placeholder="Business/ Trade License No" value="">
+                                        <label for="txtContactEmail">Contact Person's Email*</label>
+                                        <input type="text" class="form-control" maxlength="45" name="txtContactEmail" id="txtContactEmail" placeholder="Type contact person's email" value="">
+                                        <p class="company-error-msg"></p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="rl_no">RL No (Only for Recruiting Agency)</label>
-                                        <div class="input-group">
-                                            <span class="input-group-addon">RL -</span>
-                                            <input type="text" class="form-control" maxlength="6" name="rl_no" id="rl_no" placeholder="Enter Number Only" value="" onkeypress="return isNumberKey(event)" onchange="return CheckNumber($('#rl_no').val())">
-                                        </div>
-                                        <input name="hidRLNOStatus" id="hidRLNOStatus" value="" type="hidden">
+                                        <label for="txtContactMobile">Contact Person's Mobile</label>
+                                        <input type="tel" class="form-control" placeholder="Mobile number" id="txtContactMobile" name="txtContactMobile" value="" maxlength="13" onkeypress="return isNumberKey(event)">
                                     </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="website_url">Website URL</label>
-                                        <input type="text" class="form-control" maxlength="50" name="website_url" id="website_url" placeholder="Type Website URL" value="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <hr>
-                    <section>
-                        <h3 class="sec-title">Contact</h3>
-                        <h4 class="primary-contact">Primary Contact</h4>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="txtContactPerson">Contact Person's Name*</label>
-                                    <input type="text" class="form-control" maxlength="100" name="txtContactPerson" id="txtContactPerson" placeholder="Type contact person's name" style="" value="">
-                                    <p class="company-error-msg"></p>
+                                    <script>
+                                        // superplaceholder({
+                                        //     el: txtContactMobile,
+                                        //     sentences: ['017XXXXXXXX', '018XXXXXXXX', '019XXXXXXXX', '015XXXXXXXX', '016XXXXXXXX', '013XXXXXXXX'],
+                                        //     options: {
+                                        //         loop: true,
+                                        //         startOnFocus: false
+                                        //     }
+                                        // })
+                                    </script>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="txtDesignation">Contact Person's Designation*</label>
-                                    <input type="text" class="form-control" maxlength="100" name="txtDesignation" id="txtDesignation" placeholder="Type contact person's designation" style="" value="">
-                                    <p class="company-error-msg"></p>
-                                </div>
+                            </section>
+                            <hr>
+                            <!-- <br> -->
+                            <section>
+                            <div class="text-right d-flex justify-content-end align-items-end">
+                                    <input type="submit" class="btn-continue" value="Continue">
+                                <!-- <button class="btn continue" onclick="return IsPricingPolicyAccepted_new(); ga('send', 'event', 'New Account', 'click', 'Continue', 1);" disabled=""> Continue <i class="icon-angle-right"></i></button> -->
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="txtContactEmail">Contact Person's Email*</label>
-                                    <input type="text" class="form-control" maxlength="45" name="txtContactEmail" id="txtContactEmail" placeholder="Type contact person's email" value="">
-                                    <p class="company-error-msg"></p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="txtContactMobile">Contact Person's Mobile</label>
-                                    <input type="tel" class="form-control" placeholder="Mobile number" id="txtContactMobile" name="txtContactMobile" value="" maxlength="13" onkeypress="return isNumberKey(event)">
-                                </div>
-                                <script>
-                                    // superplaceholder({
-                                    //     el: txtContactMobile,
-                                    //     sentences: ['017XXXXXXXX', '018XXXXXXXX', '019XXXXXXXX', '015XXXXXXXX', '016XXXXXXXX', '013XXXXXXXX'],
-                                    //     options: {
-                                    //         loop: true,
-                                    //         startOnFocus: false
-                                    //     }
-                                    // })
-                                </script>
-                            </div>
-                        </div>
-                    </section>
-                    <hr>
-                    <!-- <br> -->
-                    <section>
-                        <div class="text-right d-flex justify-content-end align-items-end">
-                                <input type="submit" class="btn-continue" value="Continue">
-                            <!-- <button class="btn continue" onclick="return IsPricingPolicyAccepted_new(); ga('send', 'event', 'New Account', 'click', 'Continue', 1);" disabled=""> Continue <i class="icon-angle-right"></i></button> -->
-                        </div>
-                    </section>
-                    <input type="hidden" name="hidEntrepreneur" id="hidEntrepreneur" value="">
-                    <input type="hidden" name="hidCity" id="hidCity" value="0">
-                    <input type="hidden" name="hidArea" id="hidArea" value="">
-                    <input type="hidden" name="hidIndustry" id="hidIndustry" value="">
+                            </section>
+                            <input type="hidden" name="hidEntrepreneur" id="hidEntrepreneur" value="">
+                            <input type="hidden" name="hidCity" id="hidCity" value="0">
+                            <input type="hidden" name="hidArea" id="hidArea" value="">
+                            <input type="hidden" name="hidIndustry" id="hidIndustry" value="">
+        
+                            <input type="hidden" name="facilityForDisability" id="facilityForDisability" value="">
+                            <input type="hidden" name="haveDisaibilityInclusion" id="haveDisaibilityInclusion" value="">
+                            <input type="hidden" name="haveAnySupport" id="haveAnySupport" value="">
+                            <input type="hidden" name="provideTrainingForEmployee" id="provideTrainingForEmployee" value="">
+                            <input type="hidden" name="whatFacilityCompanyHave" id="whatFacilityCompanyHave" value="">
 
-                    <input type="hidden" name="facilityForDisability" id="facilityForDisability" value="">
-                    <input type="hidden" name="haveDisaibilityInclusion" id="haveDisaibilityInclusion" value="">
-                    <input type="hidden" name="haveAnySupport" id="haveAnySupport" value="">
-                    <input type="hidden" name="provideTrainingForEmployee" id="provideTrainingForEmployee" value="">
-                    <input type="hidden" name="whatFacilityCompanyHave" id="whatFacilityCompanyHave" value="">
-
-                </form>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-</section>
+    </section>
+    <!-- Employeraccount section end -->
+
 
     <!-- footers section start -->
     <section class="up_footer style="background-color: #263238;">

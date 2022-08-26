@@ -92,6 +92,9 @@ ul{
    width: 60%;
    margin-left: 15px;
 }
+
+
+
 /* Hot jobs end*/
 .social-links a{
     font-size: 18px;
@@ -173,6 +176,45 @@ ul{
     /* Under footer end */
   
 /* Responsiv start */
-
  
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  
+  .hotjobs{
+    margin-bottom: 2360px;
+  }
+  .box1{
+    width: 100%;
+ }
+ .box2{
+  height: 170px;
+ }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {  
+  
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .hotjobs{
+    margin-bottom: 1160px;
+  }
+  .box1{
+    width: 50%;
+
+ }
+}
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+
+ }  
 /* Responsiv end */  
