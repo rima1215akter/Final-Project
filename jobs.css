@@ -9,11 +9,12 @@
     margin-bottom: 10px;
     position: relative;
 }
+.card .hovered{
+    padding: 30px;
+}    
 .card .featured-job{
     width: 90%;
     padding: 30px;
-    /* padding-left: 20px;
-    padding-top: 20px; */
 }
 .featured-Job-wrapper .featured-job .featured-wrap {
     padding-top: 15px;
@@ -24,12 +25,7 @@
     cursor: pointer;
     z-index: 2;
     position: relative;
-}
-/* .row {
-    margin-right: -15px;
-    margin-left: -15px;
-} */
-
+} 
 .card .featured-job .featured-wrap .featured {
     font-size: 12px;
     font-weight: bold;
@@ -45,6 +41,6 @@
     text-align: right;
 }
 
-.logo {
+ /* .logo {
     float: left;
-}
+}  */
