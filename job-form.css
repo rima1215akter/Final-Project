@@ -1,3 +1,9 @@
+#jobs h2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: 30px;
+}
 .jdfx {
     display: flex;
     flex-flow: row wrap;
@@ -12,7 +18,8 @@
 
 .jdfx .ptjwrap {
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
+    /* flex-flow: row wrap; */
 }
 .jdfx h2 {
     color: #2b882f;
@@ -43,7 +50,42 @@
     margin-top: 20px;
 }
 .jdfx .job_des h4 {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.jdfx .job_nat h4 {
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.jdfx .job_req h4 {
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.jdfx .edu_req h4 {
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.jdfx .job_loc h4 {
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.jdfx .salary_range h4 {
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.jdfx .oth_ben h4 {
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.jdfx .job_source  h4 {
+    font-size: 18px;
     line-height: 1.42857143;
     color: #333;
 }
