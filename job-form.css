@@ -95,16 +95,17 @@
     padding-bottom: 20px;
     float: left;
 }
-.jdfx.company-info .information h2 {
-    font-size: 14px;
+.jdfx .company-info .information h3 {
+    font-size: 18px;
     font-weight: bold;
     margin: 20px 0 6px 0;
-    color: #5C5C5C;
+    padding-left: 30px;
+    color: #2b882f;
 }
 .jdfx .company-info span {
     display: block;
     color: #5c5c5c;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 .jdfx .m-view {
     padding: 0;
