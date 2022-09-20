@@ -133,7 +133,17 @@
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtReligion" id="txtReligion" maxlength="20" size="25" value="" aria-label="type your Religion">
+                                                        <select name="Marital status" id="Marital status" class="form-control input-sm mb-2" aria-label="select Marital status">
+                                                            <option value="-1">Select</option>
+                                                            <option value="Islam">Islam</option> 
+                                                            <option value="Hinduism">Hinduism</option>
+                                                            <option value="Judaism">Judaism</option>
+                                                            <option value="Jainism">Jainism</option>
+                                                            <option value="Shinto">Shinto</option>
+                                                            <option value="Buddhism">Buddhism</option>
+                                                            <option value="Christianity">Christianity</option>
+                                                            <option value="Taoism">Taoism</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,7 +155,7 @@
                                                     </div>
                                                     <div class="col-sm-8">
                                                         <div class="styled-select">
-                                                            <select name="cboMarital status" id="cboMarital status" class="form-control input-sm mb-2" aria-label="select Marital status">
+                                                            <select name="Religion" id="Religion" class="form-control input-sm mb-2" aria-label="select Marital status">
                                                                 <option value="-1">Select</option>
                                                                 <option value="Single">Single</option> 
                                                                 <option value="Married">Married</option>
@@ -154,38 +164,23 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
                                             <div class="col-sm-12 col-md-6">
                                                 <div class="row">
                                                     <div class="col-sm-3">
                                                         Gender
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
-                                                    <div class="col-sm-8">
-                                                        
+                                                    <div class="col-sm-8">    
                                                         <div class="styled-select">
-                                                            <select name="cboGemder" id="cboGemder" class="form-control input-sm mb-2" aria-label="select gender">
+                                                            <select name="Gender" id="Marital status" class="form-control input-sm mb-2" aria-label="select Marital status">
                                                                 <option value="-1">Select</option>
                                                                 <option value="Female">Female</option> 
-                                                                <option value="Male">Male</option>
+                                                                <option value="Male">Male</option> 
                                                             </select>
-                                                        </div>
-                                                        
+                                                        </div>    
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-12 col-md-6">
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        Nationality
-                                                        <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtNationality" id="txtNationality" maxlength="20" size="25" value="" aria-label="type your Nationality">
-                                                    </div>
-                                                </div>
-                                            </div>
-    
                                             <div class="col-sm-12 col-md-6">
                                                 <div class="row">
                                                     <div class="col-sm-3">
@@ -200,33 +195,22 @@
                                             <div class="col-sm-12 col-md-6">
                                                 <div class="row">
                                                     <div class="col-sm-3">
+                                                        Nationality
+                                                        <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control mb-2" name="txtNationality" id="txtNationality" maxlength="20" size="25" value="" aria-label="type your Nationality">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
                                                         Passport no
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
                                                     <div class="col-sm-8">
                                                         <input type="text" class="form-control mb-2" name="txtPassport no" id="txtPassport no" maxlength="50" size="25" value="" aria-label="type your Passport no">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-6">
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        Present address
-                                                        <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtPresent address" id="txtPresent address" maxlength="50" size="25" value="" aria-label="type your Present address">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-6">
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        Permanent address
-                                                        <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtPermanent address" id="txtPermanent address" maxlength="50" size="25" value="" aria-label="type your Permanent address">
                                                     </div>
                                                 </div>
                                             </div>
@@ -251,7 +235,29 @@
                                                         <input type="text" class="form-control" name="txtContact no:" id="txtContact no:" maxlength="50" size="25" value="" aria-label="type your Contact no:">
                                                     </div>
                                                 </div>
-                                            </div>        
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        Present address
+                                                        <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <textarea name="txtPresent address" id="txtPresent address" class="form-control" style="width: 100%; resize: none;" rows="4" maxlength="500" aria-label="write comments"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        Permanent address
+                                                        <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <textarea name="txtPermanent address" id="txtPermanent address" class="form-control" style="width: 100%; resize: none;" rows="4" maxlength="500" aria-label="write comments"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>       
                                             <div class="col-sm-12 mb-2 mt-5" style="text-align: center;">                                                                                
                                                 <input name="PageFor" type="hidden" id="PageFor" value="">
                                                  <span class="action_buttons">
