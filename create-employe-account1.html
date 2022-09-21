@@ -60,15 +60,73 @@
             </div>
         </nav>
     </header>
-
-    <section class="registration-form mb-3">
-        <div class="container">
+    <section class="registration-form container mt-3 mb-3" style="background-color: white;">
+        <div class="container" id="main" role="main">
             <div class="row">
                 <div class="col-md-12">
                    <div class="left-form">
-                       <div class="tab-content">
-                       </div>
+                    <form action="">
+                        <section>
+                            <h3>Create Account</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group" id="username">
+                                        <label for="txtUserName">Username</label>
+                                        <input type="text" class="form-control username" name="txtUserName" id="txtUserName" maxlength="20" placeholder="Type Username"  value="">
+                                        <p class="user-error-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group" id="Gender">
+                                        <label for="txtGender">Gender</label>
+                                        <select name="Gender" id="Gender" class="form-control input-sm mb-2" aria-label="select Gender">
+                                            <option value="-1">Select</option>
+                                            <option value="Female">Female</option> 
+                                            <option value="Male">Male</option>
+                                            <option value="Others">Others</option>  
+                                        </select>
+                                        <p class="user-error-msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
                    </div>
+                </div>
+                <div class="col-md-12">   
+                    <div class="form-group" id="spnCategory">
+                        <label for="txtselect your Skill">Select your skill</label> 
+                        <select name="selected_Cat" id="selected_Cat" class="form-control from-control-login">
+                            <option value="-1" selected="">Select</option>
+                            <option value="1">Accounting/Finance</option>
+                            <option value="2">Bank/Non-Bank Fin. Institution</option>
+                            <option value="3">Commercial/Supply Chain</option>
+                            <option value="4">Education/Training</option>
+                            <option value="5">Engineer/Architect</option>
+                            <option value="6">Garments/ Textile</option>
+                            <option value="7">General Management/Admin</option>
+                            <option value="8">IT/Telecommunication</option>
+                            <option value="9">Marketing/Sales</option>
+                            <option value="10">Media/Advertisement/Event Mgt.</option>
+                            <option value="11">Medical/Pharma</option>
+                            <option value="12">NGO/Development</option>
+                            <option value="13">Research/Consultancy</option>
+                            <option value="14">Secretary/Receptionist</option>
+                            <option value="15">Data Entry/Operator/BPO</option>
+                            <option value="16">Customer Support/Call Centre</option>
+                            <option value="17">HR/Org. Development</option>
+                            <option value="18">Design/Creative</option>
+                            <option value="19">Production/Operation</option>
+                            <option value="20">Hospitality/ Travel/ Tourism</option>
+                            <option value="21">Beauty Care/ Health &amp; Fitness</option>
+                            <option value="22">Law/ Legal</option>
+                            <option value="23">Electrician/ Construction/ Repair</option>
+                            <option value="24">Security/Support Service</option>
+                            <option value="25">Driving/Motor Technician</option>
+                            <option value="26">Agro (Plant/Animal/Fisheries)</option>
+                        </select>
+                    </div>
+                    <!-- <span id="selected_Cat_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span> -->
                 </div>
             </div>
         </div>
