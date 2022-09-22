@@ -1,0 +1,10 @@
+#main{
+    padding: 30px;
+}
+.reg-form .error-message {
+    color: #DA381B;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    display: none;
+}

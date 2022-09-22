@@ -60,25 +60,56 @@
             </div>
         </nav>
     </header>
+    <!-- <label for="txtFirstName">
+        <div class="elabl" id="name">নাম <span class="required">(required)</span></div>
+        
+        <div class="error-message msg" id="txtFirstName_message" style="display: none;"></div>
+        <div class="error-message" id="txt_alreadyExist_account"></div>
+
+        <input class="form-control from-control-login name-msg" placeholder="আপনার নাম" autocomplete="off" name="txtFirstName" id="txtFirstName" type="text" value="" required="">
+
+    </label> -->
+    <!-- <div class="col-md-12">
+        <fieldset>
+            <legend class="sr-only">Skill Information</legend>
+            <label for="selected_Cat">
+                <div class="elabl" id="category">নিচের লিস্ট থেকে দক্ষতা নির্বাচন করুন <span class="required">(required)</span></div>
+                
+                <div class="error-message msg" id="selected_Cat_message" style="display: none;"></div>
+                
+                <div class="form-group" id="spnCategory">
+                    <select name="selected_Cat" id="selected_Cat" class="form-control from-control-login"><option value="-1" selected="">নির্বাচন</option><option value="79">পিয়ন</option><option value="80">ক্লিনার</option><option value="81">মালী</option><option value="78">গার্মেন্টস টেকনিশিয়ান / মেশিন অপারেটর</option><option value="82">কার্পেন্টার</option><option value="83">শো-রুম সহকারি/সেলসম্যান</option><option value="84">সেলস রিপ্রেজেন্টেটিভ/ বিক্রয় প্রতিনিধি</option><option value="85">ইমাম/ খতিব/ মুয়াজ্জিন</option><option value="86">জিম/ ফিটনেস ট্রেইনার</option><option value="87">ইন্টারপ্রিটার/ দোভাষী</option><option value="88">বিউটিশিয়ান/ সেলুন</option><option value="89">ফায়ার সেফটি/ ফায়ারফাইটার</option><option value="61">ডাটা এন্ট্রি/ কম্পিউটার অপারেটর</option><option value="62">মেকানিক/ টেকনিশিয়ান</option><option value="63">নার্স</option><option value="64">ওয়েটার / ওয়েট্রেস</option><option value="65">প্যাথলজিষ্ট/ল্যাব সহকারী</option><option value="66">ইলেকট্রিশিয়ান/ইলেকট্রনিকস্ টেকনিশিয়ান</option><option value="67">ড্রাইভার</option><option value="68">শেফ/বাবুর্চী</option><option value="69">হাউজকিপার</option><option value="70">সিকিউরিটি গার্ড</option><option value="71">গ্রাফিক ডিজাইনার</option><option value="72">ওয়েল্ডার</option><option value="73">প্লাম্বার/পাইপফিটিং</option><option value="74">স্যুইং মেশিন অপারেটর</option><option value="75">রাজমিস্ত্রি/ নির্মান কর্মী</option><option value="76">CAD অপারেটর</option><option value="77">ডেলিভারী ম্যান</option><option value="-11">অন্যান্য স্পেশাল স্কিল্‌ড জব্‌স</option></select></div>
+            </label>
+        </fieldset> -->
+        
+        <!-- <span id="selected_Cat_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span> -->
+    </div>
     <section class="registration-form container" style="background-color: white;">
         <div class="container" id="main" role="main">
-            <div class="row">
+            <div class="row reg-form">
                 <div class="col-md-12">
                     <div class="left-form">
                         <form action="">
                             <section>
-                                <h3>Create Account</h3>
+                                <h3>অ্যাকাউন্ট তৈরী করুন</h3>
                                 <div class="row mt-3">
                                     <div class="col-md-6">
+                                        <div class="error-message msg" id="txtFirstName_message" style="display: block;" aria-live="assertive">নাম খালি রাখা যাবে না ।</div>
                                         <div class="form-group" id="username">
-                                            <label for="txtUserName">Username</label>
-                                            <input type="text" class="form-control username" name="txtUserName" id="txtUserName" maxlength="20" required="required" placeholder="Type Username"  value="">
+                                            <label for="txtFirstName">
+                                                <div class="elabl" id="name">নাম <span class="required">(required)</span>
+                                                </div>
+                                            </label>
+                                            <input type="text" class="form-control FirstName" name="txtFirstName" id="txtFirstName" maxlength="20" required="required" placeholder="আপনার নাম"  value="">
                                             <p class="user-error-msg"></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group" id="Gender">
-                                            <label for="txtGender">Gender</label>
+                                            <label for="txtGender">
+                                                <div class="elabl" id="gender">লিঙ্গ <span class="required">(required)</span>
+                                                </div>
+                                            </label>
                                             <select name="Gender" id="Gender" class="form-control input-sm" aria-label="select Gender">
                                                 <option value="-1">Select</option>
                                                 <option value="Female">Female</option> 
@@ -94,56 +125,58 @@
                     </div>
                 </div>
                 <div class="col-md-12 mt-2">
-                    <div class="row">   
+                    <div class="row">  
                         <div class="form-group" id="spnCategory">
-                            <label for="txtselect your Skill">Select your skill</label> 
+                            <label for="txtselect your Skill">
+                                <div class="elabl" id="category">নিচের লিস্ট থেকে দক্ষতা নির্বাচন করুন <span class="required">(required)</span>
+                                </div>
+                            </label> 
                             <select name="selected_Cat" id="selected_Cat" class="form-control from-control-login">
-                                <option value="-1" selected="">Select</option>
-                                <option value="1">Accounting/Finance</option>
-                                <option value="2">Bank/Non-Bank Fin. Institution</option>
-                                <option value="3">Commercial/Supply Chain</option>
-                                <option value="4">Education/Training</option>
-                                <option value="5">Engineer/Architect</option>
-                                <option value="6">Garments/ Textile</option>
-                                <option value="7">General Management/Admin</option>
-                                <option value="8">IT/Telecommunication</option>
-                                <option value="9">Marketing/Sales</option>
-                                <option value="10">Media/Advertisement/Event Mgt.</option>
-                                <option value="11">Medical/Pharma</option>
-                                <option value="12">NGO/Development</option>
-                                <option value="13">Research/Consultancy</option>
-                                <option value="14">Secretary/Receptionist</option>
-                                <option value="15">Data Entry/Operator/BPO</option>
-                                <option value="16">Customer Support/Call Centre</option>
-                                <option value="17">HR/Org. Development</option>
-                                <option value="18">Design/Creative</option>
-                                <option value="19">Production/Operation</option>
-                                <option value="20">Hospitality/ Travel/ Tourism</option>
-                                <option value="21">Beauty Care/ Health &amp; Fitness</option>
-                                <option value="22">Law/ Legal</option>
-                                <option value="23">Electrician/ Construction/ Repair</option>
-                                <option value="24">Security/Support Service</option>
-                                <option value="25">Driving/Motor Technician</option>
-                                <option value="26">Agro (Plant/Animal/Fisheries)</option>
+                                <option value="-1" selected="">নির্বাচন</option>
+                                <option value="79">পিয়ন</option>
+                                <option value="80">ক্লিনার</option>
+                                <option value="81">মালী</option>
+                                <option value="78">গার্মেন্টস টেকনিশিয়ান / মেশিন অপারেটর</option>
+                                <option value="82">কার্পেন্টার</option>
+                                <option value="83">শো-রুম সহকারি/সেলসম্যান</option>
+                                <option value="84">সেলস রিপ্রেজেন্টেটিভ/ বিক্রয় প্রতিনিধি</option>
+                                <option value="85">ইমাম/ খতিব/ মুয়াজ্জিন</option>
+                                <option value="86">জিম/ ফিটনেস ট্রেইনার</option>
+                                <option value="87">ইন্টারপ্রিটার/ দোভাষী</option>
+                                <option value="88">বিউটিশিয়ান/ সেলুন</option>
+                                <option value="89">ফায়ার সেফটি/ ফায়ারফাইটার</option>
+                                <option value="61">ডাটা এন্ট্রি/ কম্পিউটার অপারেটর</option>
+                                <option value="62">মেকানিক/ টেকনিশিয়ান</option>
+                                <option value="63">নার্স</option>
+                                <option value="64">ওয়েটার / ওয়েট্রেস</option>
+                                <option value="65">প্যাথলজিষ্ট/ল্যাব সহকারী</option>
+                                <option value="66">ইলেকট্রিশিয়ান/ইলেকট্রনিকস্ টেকনিশিয়ান</option>
+                                <option value="67">ড্রাইভার</option>
+                                <option value="68">শেফ/বাবুর্চী</option>
+                                <option value="69">হাউজকিপার</option>
+                                <option value="70">সিকিউরিটি গার্ড</option>
+                                <option value="71">গ্রাফিক ডিজাইনার</option>
+                                <option value="72">ওয়েল্ডার</option>
+                                <option value="73">প্লাম্বার/পাইপফিটিং</option>
+                                <option value="74">স্যুইং মেশিন অপারেটর</option>
+                                <option value="75">রাজমিস্ত্রি/ নির্মান কর্মী</option>
+                                <option value="76">CAD অপারেটর</option>
+                                <option value="77">ডেলিভারী ম্যান</option>
+                                <option value="-11">অন্যান্য স্পেশাল স্কিল্‌ড জব্‌স</option>
                             </select>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="col-md-12 mt-2">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group" id="Email Address">
-                                <label for="txtEmail Address">Email Address</label>
-                                <input type="text" class="form-control Email Address" name="txtEmail Address" id="txtEmail Address" maxlength="20" required="required" placeholder="Email Address"  value="">
-                                <p class="user-error-msg"></p>
-                            </div>
-                        </div>
                         <div class="col-md-6">
                             <div class="col-sm-12">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group" id="country">
-                                            <label for="txtGender">Mobile Number</label>
+                                            <label for="txtGender">
+                                                <span class="elabl" id="mbl">মোবাইল নম্বর <span class="required">(required)</span></span>
+                                            </label>
                                             <select name="txtCountryCode" id="txtCountryCode" required="required" class="form-control from-control-login" aria-label="select country code by default Bangladesh selected">  <!-- <option value="-1">Select</option> -->
                                                 <option value="93">Afghanistan (93)</option>
                                                 <option value="355">Albania (355)</option>
@@ -288,7 +321,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group" id="Mobile">
                                             <label for="txtMobile"></label>					
-                                            <input type="text" class="form-control Mobile" name="txtMobile" id="txtMobile" maxlength="20" required="required" placeholder="Your Phone Number"  value="">
+                                            <input type="text" class="form-control Mobile" name="txtMobile" id="txtMobile" maxlength="20" required="required" placeholder="আপনার মোবাইল নম্বর"  value="">
                                             <p class="user-error-msg"></p>
                                         </div>
                                     </div>
@@ -298,51 +331,9 @@
                     </div> 
                 </div>
                 <div class="col-md-12 mt-2">
-                    <div class="row">
-                        <div class="col-md-12 saui">
-                            <fieldset>
-                                <legend>Select your User ID</legend>
-                                <div class="error-message" id="usernamError_message"></div>
-                                <div class="r-lbl">
-                                    <input type="radio" name="userNameRadio" value="email" id="userNameRadio1" onclick="setUserName(this.value);">
-                                    <label class="select-lbl" for="userNameRadio1">
-                                        <span class="outer">
-                                            <span class="inner"></span>
-                                        </span>
-                                        <span class="icon-envelope ico" aria-hidden="true"></span> Email
-                                    </label>                                            
-                                </div>
-                                <div class="r-lbl">
-                                    <input type="radio" name="userNameRadio" value="mobile" id="userNameRadio2" onclick="setUserName(this.value);">
-                                    <label class="select-lbl" for="userNameRadio2">
-                                        <span class="outer">
-                                            <span class="inner"></span>
-                                        </span>
-                                        <span class="icon-smart-phone ico" aria-hidden="true"></span> Mobile 
-                                    </label>
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-6">
-                                <div class="form-group" id="Password">
-                                    <label for="txtPassword">Password</label>
-                                    <input type="text" class="form-control Password" name="txtPassword" id="txtPassword" maxlength="20" required="required" placeholder="Type Password"  value="">
-                                    <p class="user-error-msg"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group" id="Retype Password">
-                                    <label for="txtRetype Password">Retype Password</label>
-                                    <input type="text" class="form-control Retype Password" name="txtRetype Password" id="txtRetype Password" maxlength="20" required="required" placeholder="Retype Password"  value="">
-                                    <p class="user-error-msg"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-xs-12 d-flex justify-content-center mt-5 mb-5">
-                                <a href="#"> <button type="submit" id="Continue" onclick="return formValidation();" class="btn btn-success">Create Account</button></a>
-                            </div>
+                    <div class="row"> 
+                        <div class="col-md-12 col-xs-12 d-flex justify-content-center mt-5 mb-5">
+                            <a href="#"> <button type="submit" id="Continue" onclick="return formValidation();" class="btn btn-success">অ্যাকাউন্ট তৈরি</button></a>
                         </div>
                     </div>
                 </div>
