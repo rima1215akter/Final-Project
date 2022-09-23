@@ -60,41 +60,17 @@
             </div>
         </nav>
     </header>
-    <!-- <label for="txtFirstName">
-        <div class="elabl" id="name">নাম <span class="required">(required)</span></div>
-        
-        <div class="error-message msg" id="txtFirstName_message" style="display: none;"></div>
-        <div class="error-message" id="txt_alreadyExist_account"></div>
-
-        <input class="form-control from-control-login name-msg" placeholder="আপনার নাম" autocomplete="off" name="txtFirstName" id="txtFirstName" type="text" value="" required="">
-
-    </label> -->
-    <!-- <div class="col-md-12">
-        <fieldset>
-            <legend class="sr-only">Skill Information</legend>
-            <label for="selected_Cat">
-                <div class="elabl" id="category">নিচের লিস্ট থেকে দক্ষতা নির্বাচন করুন <span class="required">(required)</span></div>
-                
-                <div class="error-message msg" id="selected_Cat_message" style="display: none;"></div>
-                
-                <div class="form-group" id="spnCategory">
-                    <select name="selected_Cat" id="selected_Cat" class="form-control from-control-login"><option value="-1" selected="">নির্বাচন</option><option value="79">পিয়ন</option><option value="80">ক্লিনার</option><option value="81">মালী</option><option value="78">গার্মেন্টস টেকনিশিয়ান / মেশিন অপারেটর</option><option value="82">কার্পেন্টার</option><option value="83">শো-রুম সহকারি/সেলসম্যান</option><option value="84">সেলস রিপ্রেজেন্টেটিভ/ বিক্রয় প্রতিনিধি</option><option value="85">ইমাম/ খতিব/ মুয়াজ্জিন</option><option value="86">জিম/ ফিটনেস ট্রেইনার</option><option value="87">ইন্টারপ্রিটার/ দোভাষী</option><option value="88">বিউটিশিয়ান/ সেলুন</option><option value="89">ফায়ার সেফটি/ ফায়ারফাইটার</option><option value="61">ডাটা এন্ট্রি/ কম্পিউটার অপারেটর</option><option value="62">মেকানিক/ টেকনিশিয়ান</option><option value="63">নার্স</option><option value="64">ওয়েটার / ওয়েট্রেস</option><option value="65">প্যাথলজিষ্ট/ল্যাব সহকারী</option><option value="66">ইলেকট্রিশিয়ান/ইলেকট্রনিকস্ টেকনিশিয়ান</option><option value="67">ড্রাইভার</option><option value="68">শেফ/বাবুর্চী</option><option value="69">হাউজকিপার</option><option value="70">সিকিউরিটি গার্ড</option><option value="71">গ্রাফিক ডিজাইনার</option><option value="72">ওয়েল্ডার</option><option value="73">প্লাম্বার/পাইপফিটিং</option><option value="74">স্যুইং মেশিন অপারেটর</option><option value="75">রাজমিস্ত্রি/ নির্মান কর্মী</option><option value="76">CAD অপারেটর</option><option value="77">ডেলিভারী ম্যান</option><option value="-11">অন্যান্য স্পেশাল স্কিল্‌ড জব্‌স</option></select></div>
-            </label>
-        </fieldset> -->
-        
-        <!-- <span id="selected_Cat_message" style="font-weight: bold; color: rgb(255, 102, 102);" class="msg"></span> -->
     </div>
     <section class="registration-form container" style="background-color: white;">
         <div class="container" id="main" role="main">
             <div class="row reg-form">
                 <div class="col-md-12">
-                    <div class="left-form">
-                        <form action="">
+                    
+                    <form class="needs-validation" action="#" method="post" autocomplete="off" onsubmit="return IsPageValid();">
                             <section>
                                 <h3>অ্যাকাউন্ট তৈরী করুন</h3>
                                 <div class="row mt-3">
                                     <div class="col-md-6">
-                                        <div class="error-message msg" id="txtFirstName_message" style="display: block;" aria-live="assertive">নাম খালি রাখা যাবে না ।</div>
                                         <div class="form-group" id="username">
                                             <label for="txtFirstName">
                                                 <div class="elabl" id="name">নাম <span class="required">(required)</span>
@@ -104,6 +80,17 @@
                                             <p class="user-error-msg"></p>
                                         </div>
                                     </div>
+                                    <label for="NAME">
+                                        Username
+                                        <span class="required">
+                                        (required)
+                                        </span>
+                                
+                                        <!-- <div class="error-message" id="nameErrorMsg" aria-live="assertive">User Name field is blank! Please type your User Name properly.</div>                             -->
+                                        
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                
+                                      </label>
                                     <div class="col-md-6">
                                         <div class="form-group" id="Gender">
                                             <label for="txtGender">
@@ -121,8 +108,8 @@
                                     </div>
                                 </div>
                             </section>
-                        </form>
-                    </div>
+                        
+                    
                 </div>
                 <div class="col-md-12 mt-2">
                     <div class="row">  
@@ -321,7 +308,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group" id="Mobile">
                                             <label for="txtMobile"></label>					
-                                            <input type="text" class="form-control Mobile" name="txtMobile" id="txtMobile" maxlength="20" required="required" placeholder="আপনার মোবাইল নম্বর"  value="">
+                                            <input type="text" class="form-control Mobile" style="font-size: 14px;" name="txtMobile" id="txtMobile" maxlength="20" required="required" placeholder="আপনার মোবাইল নম্বর"  value="">
                                             <p class="user-error-msg"></p>
                                         </div>
                                     </div>
@@ -336,9 +323,72 @@
                             <a href="#"> <button type="submit" id="Continue" onclick="return formValidation();" class="btn btn-success">অ্যাকাউন্ট তৈরি</button></a>
                         </div>
                     </div>
+                </form>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="registration-form container" style="background-color: gray;">
+        <div class="container" id="main" role="main">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="needs-validation" action="#" method="post" autocomplete="off" onsubmit="return IsPageValid();">
+                        <div class="lgin-top">
+                            <fieldset>
+                                <legend class="sr-only">Corporate Sign In</legend>
+                                <label for="NAME">
+                                  Username
+                                  <span class="required">
+                                  (required)
+                                  </span>
+                          
+                                  <!-- <div class="error-message" id="nameErrorMsg" aria-live="assertive">User Name field is blank! Please type your User Name properly.</div>                             -->
+                                  
+                                  <input type="text" class="form-control" id="validationCustom03" required>
+                          
+                                </label><br>
+                              
+                                <label for="PASS">
+                                    Password
+                                    <span class="required">
+                                    (required)
+                                    </span>
+                            
+                                    <!-- <div class="error-message" id="passErrorMsg" aria-live="assertive">Password field is blank! Please type your Password properly.</div> -->
+                            
+                                    <input type="text" class="form-control" id="validationCustom03" required>
+                                    
+                                </label>
+                            </fieldset>
+                        </div>
+
+                        <div class="lgin-middle">
+                            <div class="checkbox">
+                                <label onclick="">
+                                    <input type="checkbox" name="chkRem" id="chkRem" onchange="rememberId()">
+                                    Remember me
+                                </label>
+                            </div>                                
+                        </div>
+
+                        <div class="lgin-bottom">
+                          <input type="submit" id="sighIn" class="btn btn-default btn-block" value="Sign In">
+                      </div>
+
+                        <a class="hlp" href="Forgot-Username-or-Password.html">Forgot Username <b>or</b> Password?</a>
+                        <br><br>
+                        <div class="reg-bottom">
+                            <div class="ins-txt">Register for your employer's account to get started.</div>
+                            <a href="Create-Employer-account.html" class="ca" style="display: flex; justify-content: center; align-items: center;">Create Account</a>
+                        </div>
+                        
+                        <!-- <input name="JobNo" type="hidden" id="JobNo" value="">
+                        <input name="AppType" type="hidden" id="AppType" value=""> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="up_footer style="background-color: #263238;">
