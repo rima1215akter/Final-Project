@@ -24,11 +24,11 @@
 .jdfx h2 {
     color: #2b882f;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     margin: 0 0 10px 0;
 }
 .jdfx  h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #333333;
     margin: 0;
@@ -48,6 +48,9 @@
 }
 .col-md-4 .panel-default .panel-heading{
     margin-top: 20px;
+}
+.jdfx .vac h4{
+    font-size: 18px;
 }
 .jdfx .job_des h4 {
     font-size: 18px;

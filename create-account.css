@@ -28,7 +28,7 @@
     margin-right: -15px;
 }
 .cart-ac.cart-wc {
-    background: #fff url(https://mybdjobs.bdjobs.com/mybdjobs/images/gen.png) left top no-repeat;
+    background: #fff url(img/img/laptop-pic2.jpg) left top no-repeat;
     background-size: auto;
 }
 .cart-ac.cart-wc:hover{
@@ -40,7 +40,7 @@
     line-height: 1.428571429;
     border-radius: 8px;
     border: 1px solid #ebebeb;
-    padding: 18px 10px 18px 112px;
+    padding: 18px 10px 18px 130px;
     min-height: 130px;
 }
 .mob-cart a, .mob-cart a:active, .mob-cart a:hover {
@@ -96,7 +96,7 @@
     position: relative;
 }
 .cart-ac.cart-bc {
-    background: #fff url(https://mybdjobs.bdjobs.com/mybdjobs/images/spsk.png) left top no-repeat;
+    background: #fff url(img/img/mechanic-pic2.png) left top no-repeat;
     background-size: auto;
 }
 .cart-ac.cart-bc:hover{
@@ -152,7 +152,7 @@
     position: relative;
 }
 .cart-ac.cart-pwd {
-    background: #fff url(https://mybdjobs.bdjobs.com/mybdjobs/images/abfrn.png) left top no-repeat;
+    background: #fff url(img/img/disability-pic.jpg) left top no-repeat;
     background-size: auto;
 }
 .cart-ac.cart-pwd:hover{
