@@ -85,7 +85,7 @@
                                 are mandatory
                             </div>
                             <div class="col-sm-12">
-                                <form name="frmCorporateInquiry" id="frmCorporateInquiry" method="post" action="csi_insert.asp" onsubmit="return IsPageValid();">
+                                <form class="needs-validation" action="#" method="post" autocomplete="off" onsubmit="return IsPageValid();">
                                     <input type="hidden" name="hidEmployerType" id="hidEmployerType" value="">
                                     <div class="col-sm-12" style="height: 1px; border-top: 1px solid #ddd;"></div>
                                     <div class="col-sm-12 form-container">
@@ -101,7 +101,7 @@
                                                            <img alt="star" src="img/star.gif" width="7" height="7" hspace="5">
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtName" id="txtName" maxlength="90" size="50" value="" aria-label="write your name">
+                                                        <input type="text" class="form-control mb-2" name="txtName" id="txtName" required="required" maxlength="90" size="50" value="" aria-label="write your name">
                                                     </div>
                                                 </div>
                                             </div>
@@ -113,7 +113,7 @@
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtCompanyName" id="txtCompanyName" maxlength="100" size="50" value="" aria-label="type your company name">
+                                                        <input type="text" class="form-control mb-2" name="txtCompanyName" id="txtCompanyName" required="required" maxlength="100" size="50" value="" aria-label="type your company name">
                                                     </div>
                                                 </div>
                                             </div>
@@ -125,7 +125,7 @@
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtCompanyAddress" id="txtCompanyAddress" maxlength="200" size="50" value="" aria-label="type your company address">
+                                                        <input type="text" class="form-control mb-2" name="txtCompanyAddress" id="txtCompanyAddress" required="required" maxlength="200" size="50" value="" aria-label="type your company address">
                                                     </div>
                                                 </div>
                                             </div>
@@ -137,7 +137,7 @@
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" class="form-control mb-2" name="txtContactPhone" id="txtContactPhone" maxlength="20" size="25" value="" aria-label="type your contact phone">
+                                                        <input type="text" class="form-control mb-2" name="txtContactPhone" id="txtContactPhone" required="required" maxlength="20" size="25" value="" aria-label="type your contact phone">
                                                     </div>
                                                 </div>
                                             </div>
@@ -148,8 +148,7 @@
                                                         Country Name
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
-                                                    <div class="col-sm-8">
-                                                        
+                                                    <div class="col-sm-8">    
                                                         <div class="styled-select">
                                                             <select name="cboCountry" id="cboCountry" class="form-control input-sm mb-2" aria-label="select country">
                                                                 <option value="-1">Select</option>
@@ -607,8 +606,7 @@
                                                                 <option value="Zimbabwe">Zimbabwe</option>
                                                                 
                                                             </select>
-                                                        </div>
-                                                        
+                                                        </div>   
                                                     </div>
                                                 </div>
                                             </div>
@@ -620,19 +618,18 @@
                                                         <img alt="star" src="img/star.gif" height="7" hspace="5" width="7">
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="text" class="form-control" name="txtContactEmail" id="txtContactEmail" maxlength="50" size="25" value="" aria-label="type your email address">
+                                                        <input type="text" class="form-control" name="txtContactEmail" id="txtContactEmail" required="required" maxlength="50" size="25" value="" aria-label="type your email address">
                                                     </div>
                                                 </div>
                                             </div>
     
-                                         
-                                        <div class="col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-sm-3">
-                                                        <em>Comments :</em>
-                                                        <span style="color: #CC0000">(within 500 characters.)</span>
+                                            <div class="col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <em>Comments :</em>
+                                                            <span style="color: #CC0000">(within 500 characters.)</span>
+                                                        </div>
                                                     </div>
-                                                </div>
                                             </div>
     
                                             <div class="col-sm-12">
@@ -650,8 +647,7 @@
                                 </form>
                                 <form id="service_details" method="get" target="_blank">
                                 </form>
-                            </div>
-                            
+                            </div> 
                         </div>
                     </div>
                 </div>

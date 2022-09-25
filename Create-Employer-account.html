@@ -62,41 +62,34 @@
         <div class="container" id="main" role="main">
             <div class="row">
                 <div class="col-md-12">
-                    <!--
-                    <div style="width: 90%;background-color: #8bc34a2e;border: 1px dashed #999999;color: #FF0000;padding-left: 10px;padding-right: 10px;padding-top: 0;padding-bottom: 0px;margin-left: 55px;">
-                        <strong><u>Following Error occurred:</u></strong>
-                        <ul></ul>
-                    </div>
-                    <br />
-                    -->
                     <div class="job-board emp-reg-form pt-3">
                         <h3 class="page-title">Employer Registration Form</h3>
-                        <form name="frmCorporateNewAccount" id="frmCorporateNewAccount" method="post" action="corporate_insert.asp" onsubmit="return FormValidation(''); ">
+                        <form class="needs-validation" action="#" method="post" autocomplete="off" onsubmit="return IsPageValid();">
                             <section>
                                 <h3 class="sec-title">Account Information</h3>
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group" id="username">
                                             <label for="txtUserName">Username*</label>
-                                            <input type="text" class="form-control username" name="txtUserName" id="txtUserName" maxlength="20" placeholder="Type Username"  value="">
+                                            <input type="text" class="form-control username" name="txtUserName" id="txtUserName" required="required" maxlength="20" placeholder="Type Username"  value="">
                                             <p class="user-error-msg"></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label for="txtPassword">Password*</label>
-                                            <input type="password" class="form-control" maxlength="8" name="txtPassword" id="txtPassword" placeholder="Use maximum 8 characters">
+                                            <input type="password" class="form-control" maxlength="8" name="txtPassword" id="txtPassword" required="required" placeholder="Use maximum 8 characters">
                                             <p class="user-error-msg"></p>
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label for="txtConfirmPassword">Confirm Password*</label>
-                                            <input type="password" class="form-control" maxlength="8" name="txtConfirmPassword" id="txtConfirmPassword" placeholder="Retype password">
+                                            <input type="password" class="form-control" maxlength="8" name="txtConfirmPassword" id="txtConfirmPassword" required="required" placeholder="Retype password">
                                             <p class="user-error-msg"></p>
                                         </div>
                                     </div>
-                            </div>
+                                </div>
                             </section>
                             <hr>
                             <section>
@@ -105,57 +98,24 @@
                                 <div class="col-sm-6">
                                     <div class="form-group" id="companyname">
                                         <label for="txtCompanyName">Company Name*</label>
-                                        <input type="text" class="form-control companyname" id="txtCompanyName" name="txtCompanyName" maxlength="120" placeholder="Type Company Name" value="">
+                                        <input type="text" class="form-control companyname" id="txtCompanyName" required="required" name="txtCompanyName" maxlength="120" placeholder="Type Company Name" value="">
                                         <p class="company-error-msg"></p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="txtCompanyBangla" class="bn">কোম্পানির নাম (বাংলায়)</label>
-                                        <input type="text" class="form-control" name="txtCompanyBangla" id="txtCompanyBangla" maxlength="120" placeholder="কোম্পানির নাম বাংলায় লিখুন" value="">
-                                    
+                                        <input type="text" class="form-control" name="txtCompanyBangla" id="txtCompanyBangla" required="required" maxlength="120" placeholder="কোম্পানির নাম বাংলায় লিখুন" value="">
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="row">
-                            <div class="col-sm-12">
-                                <div class="arynent-wrap">
-                                    <fieldset>
-                                        <legend>Are you new Entrepreneur?</legend>
-                                        <div class="nentp-wrap">
-                                            <input type="radio" name="aynentp" id="aynentp-1" value="1" class="nentpyes">
-                                            <label class="aynentp" for="aynentp-1">
-                                                <span class="outer">
-                                                    <span class="inner"></span>
-                                                </span>
-                                                Yes                                            
-                                            </label>                                            
-                                        </div>
-
-                                        <div class="nentp-wrap">
-                                            <input type="radio" name="aynentp" id="aynentp-2" value="0">
-                                            <label class="aynentp" for="aynentp-2">
-                                                <span class="outer">
-                                                    <span class="inner"></span>
-                                                </span>
-                                                No
-                                            </label>
-                                        </div>
-                                    </fieldset>
-
-                                    <div class="tentpmsg hide">
-                                    If your company age is maximum 1 year, total employee size is 6 and your business falls into any of the categories like Restaurant, Showroom, Pharmacy, Saloon, Agro Farm, Workshop then enjoy our Uddokta Scheme for the next one year. (*Condition applied)
-                                    </div>
-                                </div>
-                            </div>
-                            </div> -->
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group" id="CompanyEstablished">
                                         <label for="txtCompanyEstablished">Year of Establishment
                                         <!-- <span class="manf">*</span> -->
                                         </label>
-                                        <input type="text" class="form-control" id="txtCompanyEstablished" name="txtCompanyEstablished" maxlength="4" onkeypress="return isNumberKey(event)" placeholder="Type Company's Establishment Year, e.g. 2003" value="">
+                                        <input type="text" class="form-control" id="txtCompanyEstablished" required="required" name="txtCompanyEstablished" maxlength="4" onkeypress="return isNumberKey(event)" placeholder="Type Company's Establishment Year, e.g. 2003" value="">
                                         <p class="company-error-msg"></p>
                                     </div>
                                 </div>
@@ -182,7 +142,7 @@
                                 </div>
                             </div>
                             <h4 class="company-address">Company Address*</h4>
-                            <div class="address-wrap">                                                            
+                            <div class="address-wrap">                                                 
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
@@ -190,457 +150,457 @@
                                             <select class="form-control" name="Country" id="Country">
                                                 <option value="-1">Select Country</option>
                                                 
-                                                    <option value="101##Afghanistan">Afghanistan</option>
-                                                
-                                                    <option value="102##Albania">Albania</option>
-                                                
-                                                    <option value="103##Algeria">Algeria</option>
-                                                
-                                                    <option value="104##American Samoa">American Samoa</option>
-                                                
-                                                    <option value="105##Andorra">Andorra</option>
-                                                
-                                                    <option value="106##Angola">Angola</option>
-                                                
-                                                    <option value="107##Anguilla">Anguilla</option>
-                                                
-                                                    <option value="108##Antarctica">Antarctica</option>
-                                                
-                                                    <option value="109##Antigua">Antigua</option>
-                                                
-                                                    <option value="110##Argentina">Argentina</option>
-                                                
-                                                    <option value="111##Armenia">Armenia</option>
-                                                
-                                                    <option value="112##Aruba">Aruba</option>
-                                                
-                                                    <option value="113##Australia">Australia</option>
-                                                
-                                                    <option value="114##Austria">Austria</option>
-                                                
-                                                    <option value="115##Azerbaijan">Azerbaijan</option>
-                                                
-                                                    <option value="116##Bahamas">Bahamas</option>
-                                                
-                                                    <option value="117##Bahrain">Bahrain</option>
-                                                
-                                                    <option value="Bangladesh" selected="selected">Bangladesh</option>
-                                                
-                                                    <option value="119##Barbados">Barbados</option>
-                                                
-                                                    <option value="120##Belarus">Belarus</option>
-                                                
-                                                    <option value="121##Belgium">Belgium</option>
-                                                
-                                                    <option value="122##Belize">Belize</option>
-                                                
-                                                    <option value="123##Benin">Benin</option>
-                                                
-                                                    <option value="124##Bermuda">Bermuda</option>
-                                                
-                                                    <option value="125##Bhutan">Bhutan</option>
-                                                
-                                                    <option value="126##Bolivia">Bolivia</option>
-                                                
-                                                    <option value="127##Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                                                
-                                                    <option value="128##Botswana">Botswana</option>
-                                                
-                                                    <option value="129##Brazil">Brazil</option>
-                                                
-                                                    <option value="130##British Virgin Islands">British Virgin Islands</option>
-                                                
-                                                    <option value="131##Brunei">Brunei</option>
-                                                
-                                                    <option value="132##Bulgaria">Bulgaria</option>
-                                                
-                                                    <option value="133##Burkina Faso">Burkina Faso</option>
-                                                
-                                                    <option value="135##Burundi">Burundi</option>
-                                                
-                                                    <option value="136##Cambodia">Cambodia</option>
-                                                
-                                                    <option value="137##Cameroon">Cameroon</option>
-                                                
-                                                    <option value="138##Canada">Canada</option>
-                                                
-                                                    <option value="139##Cape Verde">Cape Verde</option>
-                                                
-                                                    <option value="140##Central African Republic">Central African Republic</option>
-                                                
-                                                    <option value="141##Chad">Chad</option>
-                                                
-                                                    <option value="142##Chile">Chile</option>
-                                                
-                                                    <option value="143##China">China</option>
-                                                
-                                                    <option value="144##Colombia">Colombia</option>
-                                                
-                                                    <option value="145##Comoros">Comoros</option>
-                                                
-                                                    <option value="147##Congo">Congo</option>
-                                                
-                                                    <option value="146##Congo (Zaire)">Congo (Zaire)</option>
-                                                
-                                                    <option value="148##Cook Islands">Cook Islands</option>
-                                                
-                                                    <option value="149##Costa Rica">Costa Rica</option>
-                                                
-                                                    <option value="150##Cote d'Ivoire (Ivory Coast)">Cote d'Ivoire (Ivory Coast)</option>
-                                                
-                                                    <option value="151##Croatia">Croatia</option>
-                                                
-                                                    <option value="152##Cuba">Cuba</option>
-                                                
-                                                    <option value="153##Cyprus">Cyprus</option>
-                                                
-                                                    <option value="154##Czech Republic">Czech Republic</option>
-                                                
-                                                    <option value="155##Denmark">Denmark</option>
-                                                
-                                                    <option value="156##Djibouti">Djibouti</option>
-                                                
-                                                    <option value="157##Dominica">Dominica</option>
-                                                
-                                                    <option value="158##Dominican Republic">Dominican Republic</option>
-                                                
-                                                    <option value="323##East Timor">East Timor</option>
-                                                
-                                                    <option value="159##Ecuador">Ecuador</option>
-                                                
-                                                    <option value="160##Egypt">Egypt</option>
-                                                
-                                                    <option value="161##El Salvador">El Salvador</option>
-                                                
-                                                    <option value="162##Equatorial Guinea">Equatorial Guinea</option>
-                                                
-                                                    <option value="163##Eritrea">Eritrea</option>
-                                                
-                                                    <option value="164##Estonia">Estonia</option>
-                                                
-                                                    <option value="165##Ethiopia">Ethiopia</option>
-                                                
-                                                    <option value="166##Falkland Islands">Falkland Islands</option>
-                                                
-                                                    <option value="232##Federated States of Micronesia">Federated States of Micronesia</option>
-                                                
-                                                    <option value="167##Fiji">Fiji</option>
-                                                
-                                                    <option value="168##Finland">Finland</option>
-                                                
-                                                    <option value="169##France">France</option>
-                                                
-                                                    <option value="170##French Guiana">French Guiana</option>
-                                                
-                                                    <option value="171##French Polynesia">French Polynesia</option>
-                                                
-                                                    <option value="172##Gabon">Gabon</option>
-                                                
-                                                    <option value="174##Gaza Strip and West Bank">Gaza Strip and West Bank</option>
-                                                
-                                                    <option value="175##Georgia">Georgia</option>
-                                                
-                                                    <option value="176##Germany">Germany</option>
-                                                
-                                                    <option value="177##Ghana">Ghana</option>
-                                                
-                                                    <option value="178##Gibraltar">Gibraltar</option>
-                                                
-                                                    <option value="179##Greece">Greece</option>
-                                                
-                                                    <option value="180##Greenland">Greenland</option>
-                                                
-                                                    <option value="181##Grenada">Grenada</option>
-                                                
-                                                    <option value="182##Guadeloupe">Guadeloupe</option>
-                                                
-                                                    <option value="183##Guam">Guam</option>
-                                                
-                                                    <option value="184##Guatemala">Guatemala</option>
-                                                
-                                                    <option value="185##Guinea">Guinea</option>
-                                                
-                                                    <option value="186##Guinea-Bissau">Guinea-Bissau</option>
-                                                
-                                                    <option value="187##Guyana">Guyana</option>
-                                                
-                                                    <option value="188##Haiti">Haiti</option>
-                                                
-                                                    <option value="190##Honduras">Honduras</option>
-                                                
-                                                    <option value="191##Hong Kong">Hong Kong</option>
-                                                
-                                                    <option value="192##Hungary">Hungary</option>
-                                                
-                                                    <option value="193##Iceland">Iceland</option>
-                                                
-                                                    <option value="194##India">India</option>
-                                                
-                                                    <option value="195##Indonesia">Indonesia</option>
-                                                
-                                                    <option value="196##Iran">Iran</option>
-                                                
-                                                    <option value="197##Iraq">Iraq</option>
-                                                
-                                                    <option value="198##Ireland">Ireland</option>
-                                                
-                                                    <option value="199##Israel">Israel</option>
-                                                
-                                                    <option value="200##Italy">Italy</option>
-                                                
-                                                    <option value="201##Jamaica">Jamaica</option>
-                                                
-                                                    <option value="202##Japan">Japan</option>
-                                                
-                                                    <option value="203##Jordan">Jordan</option>
-                                                
-                                                    <option value="204##Kazakhstan">Kazakhstan</option>
-                                                
-                                                    <option value="205##Kenya">Kenya</option>
-                                                
-                                                    <option value="206##Kiribati">Kiribati</option>
-                                                
-                                                    <option value="207##Kuwait">Kuwait</option>
-                                                
-                                                    <option value="208##Kyrgyzstan">Kyrgyzstan</option>
-                                                
-                                                    <option value="209##Laos">Laos</option>
-                                                
-                                                    <option value="210##Latvia">Latvia</option>
-                                                
-                                                    <option value="211##Lebanon">Lebanon</option>
-                                                
-                                                    <option value="212##Lesotho">Lesotho</option>
-                                                
-                                                    <option value="213##Liberia">Liberia</option>
-                                                
-                                                    <option value="214##Libya">Libya</option>
-                                                
-                                                    <option value="215##Liechtenstein">Liechtenstein</option>
-                                                
-                                                    <option value="216##Lithuania">Lithuania</option>
-                                                
-                                                    <option value="217##Luxembourg">Luxembourg</option>
-                                                
-                                                    <option value="218##Macau">Macau</option>
-                                                
-                                                    <option value="219##Macedonia">Macedonia</option>
-                                                
-                                                    <option value="220##Madagascar">Madagascar</option>
-                                                
-                                                    <option value="221##Malawi">Malawi</option>
-                                                
-                                                    <option value="222##Malaysia">Malaysia</option>
-                                                
-                                                    <option value="223##Maldives">Maldives</option>
-                                                
-                                                    <option value="224##Mali">Mali</option>
-                                                
-                                                    <option value="225##Malta">Malta</option>
-                                                
-                                                    <option value="226##Marshall Islands">Marshall Islands</option>
-                                                
-                                                    <option value="227##Martinique">Martinique</option>
-                                                
-                                                    <option value="228##Mauritania">Mauritania</option>
-                                                
-                                                    <option value="229##Mauritius">Mauritius</option>
-                                                
-                                                    <option value="230##Mayotte">Mayotte</option>
-                                                
-                                                    <option value="231##Mexico">Mexico</option>
-                                                
-                                                    <option value="233##Moldova">Moldova</option>
-                                                
-                                                    <option value="234##Monaco">Monaco</option>
-                                                
-                                                    <option value="235##Mongolia">Mongolia</option>
-                                                
-                                                    <option value="325##Montenegro">Montenegro</option>
-                                                
-                                                    <option value="236##Montserrat">Montserrat</option>
-                                                
-                                                    <option value="237##Morocco">Morocco</option>
-                                                
-                                                    <option value="238##Mozambique">Mozambique</option>
-                                                
-                                                    <option value="134##Myanmar">Myanmar</option>
-                                                
-                                                    <option value="239##Namibia">Namibia</option>
-                                                
-                                                    <option value="240##Nauru">Nauru</option>
-                                                
-                                                    <option value="241##Nepal">Nepal</option>
-                                                
-                                                    <option value="242##Netherlands">Netherlands</option>
-                                                
-                                                    <option value="243##Netherlands Antilles">Netherlands Antilles</option>
-                                                
-                                                    <option value="244##New Caledonia">New Caledonia</option>
-                                                
-                                                    <option value="245##New Zealand">New Zealand</option>
-                                                
-                                                    <option value="246##Nicaragua">Nicaragua</option>
-                                                
-                                                    <option value="247##Niger">Niger</option>
-                                                
-                                                    <option value="248##Nigeria">Nigeria</option>
-                                                
-                                                    <option value="249##North Korea">North Korea</option>
-                                                
-                                                    <option value="250##Northern Mariana Islands">Northern Mariana Islands</option>
-                                                
-                                                    <option value="251##Norway">Norway</option>
-                                                
-                                                    <option value="252##Oman">Oman</option>
-                                                
-                                                    <option value="253##Pakistan">Pakistan</option>
-                                                
-                                                    <option value="254##Palau">Palau</option>
-                                                
-                                                    <option value="255##Panama">Panama</option>
-                                                
-                                                    <option value="256##Papua New Guinea">Papua New Guinea</option>
-                                                
-                                                    <option value="257##Paraguay">Paraguay</option>
-                                                
-                                                    <option value="258##Peru">Peru</option>
-                                                
-                                                    <option value="259##Philippines">Philippines</option>
-                                                
-                                                    <option value="260##Pitcairn Islands">Pitcairn Islands</option>
-                                                
-                                                    <option value="261##Poland">Poland</option>
-                                                
-                                                    <option value="262##Portugal">Portugal</option>
-                                                
-                                                    <option value="263##Puerto Rico">Puerto Rico</option>
-                                                
-                                                    <option value="264##Qatar">Qatar</option>
-                                                
-                                                    <option value="265##Reunion">Reunion</option>
-                                                
-                                                    <option value="266##Romania">Romania</option>
-                                                
-                                                    <option value="267##Russia">Russia</option>
-                                                
-                                                    <option value="268##Rwanda">Rwanda</option>
-                                                
-                                                    <option value="269##Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                                                
-                                                    <option value="270##Saint Lucia">Saint Lucia</option>
-                                                
-                                                    <option value="271##Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                                                
-                                                    <option value="272##Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-                                                
-                                                    <option value="273##Samoa">Samoa</option>
-                                                
-                                                    <option value="274##San Marino">San Marino</option>
-                                                
-                                                    <option value="275##Sao Tome and Principe">Sao Tome and Principe</option>
-                                                
-                                                    <option value="276##Saudi Arabia">Saudi Arabia</option>
-                                                
-                                                    <option value="277##Senegal">Senegal</option>
-                                                
-                                                    <option value="278##Serbia and Montenegro (Yugoslavia)">Serbia and Montenegro (Yugoslavia)</option>
-                                                
-                                                    <option value="279##Seychelles">Seychelles</option>
-                                                
-                                                    <option value="280##Sierra Leone">Sierra Leone</option>
-                                                
-                                                    <option value="281##Singapore">Singapore</option>
-                                                
-                                                    <option value="282##Slovakia">Slovakia</option>
-                                                
-                                                    <option value="283##Slovenia">Slovenia</option>
-                                                
-                                                    <option value="284##Solomon Islands">Solomon Islands</option>
-                                                
-                                                    <option value="285##Somalia">Somalia</option>
-                                                
-                                                    <option value="286##South Africa">South Africa</option>
-                                                
-                                                    <option value="287##South Korea">South Korea</option>
-                                                
-                                                    <option value="324##South Sudan">South Sudan</option>
-                                                
-                                                    <option value="288##Spain">Spain</option>
-                                                
-                                                    <option value="289##Sri Lanka">Sri Lanka</option>
-                                                
-                                                    <option value="290##Sudan">Sudan</option>
-                                                
-                                                    <option value="291##Suriname">Suriname</option>
-                                                
-                                                    <option value="292##Swaziland">Swaziland</option>
-                                                
-                                                    <option value="293##Sweden">Sweden</option>
-                                                
-                                                    <option value="294##Switzerland">Switzerland</option>
-                                                
-                                                    <option value="295##Syria">Syria</option>
-                                                
-                                                    <option value="296##Taiwan">Taiwan</option>
-                                                
-                                                    <option value="297##Tajikistan">Tajikistan</option>
-                                                
-                                                    <option value="298##Tanzania">Tanzania</option>
-                                                
-                                                    <option value="299##Thailand">Thailand</option>
-                                                
-                                                    <option value="173##The Gambia">The Gambia</option>
-                                                
-                                                    <option value="189##The Holy See">The Holy See</option>
-                                                
-                                                    <option value="300##Togo">Togo</option>
-                                                
-                                                    <option value="301##Tonga">Tonga</option>
-                                                
-                                                    <option value="302##Trinidad and Tobago">Trinidad and Tobago</option>
-                                                
-                                                    <option value="303##Tunisia">Tunisia</option>
-                                                
-                                                    <option value="304##Turkey">Turkey</option>
-                                                
-                                                    <option value="305##Turkmenistan">Turkmenistan</option>
-                                                
-                                                    <option value="306##Turks and Caicos Islands">Turks and Caicos Islands</option>
-                                                
-                                                    <option value="307##Tuvalu">Tuvalu</option>
-                                                
-                                                    <option value="308##Uganda">Uganda</option>
-                                                
-                                                    <option value="309##Ukraine">Ukraine</option>
-                                                
-                                                    <option value="310##United Arab Emirates">United Arab Emirates</option>
-                                                
-                                                    <option value="311##United Kingdom">United Kingdom</option>
-                                                
-                                                    <option value="312##United States">United States</option>
-                                                
-                                                    <option value="313##United States Virgin Islands">United States Virgin Islands</option>
-                                                
-                                                    <option value="314##Uruguay">Uruguay</option>
-                                                
-                                                    <option value="315##Uzbekistan">Uzbekistan</option>
-                                                
-                                                    <option value="316##Vanuatu">Vanuatu</option>
-                                                
-                                                    <option value="317##Venezuela">Venezuela</option>
-                                                
-                                                    <option value="318##Vietnam">Vietnam</option>
-                                                
-                                                    <option value="319##West Bank and Gaza Strip">West Bank and Gaza Strip</option>
-                                                
-                                                    <option value="320##Western Sahara">Western Sahara</option>
-                                                
-                                                    <option value="321##Yemen">Yemen</option>
-                                                
-                                                    <option value="322##Zambia">Zambia</option>
-                                                
-                                                    <option value="326##Zimbabwe">Zimbabwe</option>
+                                                <option value="101##Afghanistan">Afghanistan</option>
+                                            
+                                                <option value="102##Albania">Albania</option>
+                                            
+                                                <option value="103##Algeria">Algeria</option>
+                                            
+                                                <option value="104##American Samoa">American Samoa</option>
+                                            
+                                                <option value="105##Andorra">Andorra</option>
+                                            
+                                                <option value="106##Angola">Angola</option>
+                                            
+                                                <option value="107##Anguilla">Anguilla</option>
+                                            
+                                                <option value="108##Antarctica">Antarctica</option>
+                                            
+                                                <option value="109##Antigua">Antigua</option>
+                                            
+                                                <option value="110##Argentina">Argentina</option>
+                                            
+                                                <option value="111##Armenia">Armenia</option>
+                                            
+                                                <option value="112##Aruba">Aruba</option>
+                                            
+                                                <option value="113##Australia">Australia</option>
+                                            
+                                                <option value="114##Austria">Austria</option>
+                                            
+                                                <option value="115##Azerbaijan">Azerbaijan</option>
+                                            
+                                                <option value="116##Bahamas">Bahamas</option>
+                                            
+                                                <option value="117##Bahrain">Bahrain</option>
+                                            
+                                                <option value="Bangladesh" selected="selected">Bangladesh</option>
+                                            
+                                                <option value="119##Barbados">Barbados</option>
+                                            
+                                                <option value="120##Belarus">Belarus</option>
+                                            
+                                                <option value="121##Belgium">Belgium</option>
+                                            
+                                                <option value="122##Belize">Belize</option>
+                                            
+                                                <option value="123##Benin">Benin</option>
+                                            
+                                                <option value="124##Bermuda">Bermuda</option>
+                                            
+                                                <option value="125##Bhutan">Bhutan</option>
+                                            
+                                                <option value="126##Bolivia">Bolivia</option>
+                                            
+                                                <option value="127##Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                            
+                                                <option value="128##Botswana">Botswana</option>
+                                            
+                                                <option value="129##Brazil">Brazil</option>
+                                            
+                                                <option value="130##British Virgin Islands">British Virgin Islands</option>
+                                            
+                                                <option value="131##Brunei">Brunei</option>
+                                            
+                                                <option value="132##Bulgaria">Bulgaria</option>
+                                            
+                                                <option value="133##Burkina Faso">Burkina Faso</option>
+                                            
+                                                <option value="135##Burundi">Burundi</option>
+                                            
+                                                <option value="136##Cambodia">Cambodia</option>
+                                            
+                                                <option value="137##Cameroon">Cameroon</option>
+                                            
+                                                <option value="138##Canada">Canada</option>
+                                            
+                                                <option value="139##Cape Verde">Cape Verde</option>
+                                            
+                                                <option value="140##Central African Republic">Central African Republic</option>
+                                            
+                                                <option value="141##Chad">Chad</option>
+                                            
+                                                <option value="142##Chile">Chile</option>
+                                            
+                                                <option value="143##China">China</option>
+                                            
+                                                <option value="144##Colombia">Colombia</option>
+                                            
+                                                <option value="145##Comoros">Comoros</option>
+                                            
+                                                <option value="147##Congo">Congo</option>
+                                            
+                                                <option value="146##Congo (Zaire)">Congo (Zaire)</option>
+                                            
+                                                <option value="148##Cook Islands">Cook Islands</option>
+                                            
+                                                <option value="149##Costa Rica">Costa Rica</option>
+                                            
+                                                <option value="150##Cote d'Ivoire (Ivory Coast)">Cote d'Ivoire (Ivory Coast)</option>
+                                            
+                                                <option value="151##Croatia">Croatia</option>
+                                            
+                                                <option value="152##Cuba">Cuba</option>
+                                            
+                                                <option value="153##Cyprus">Cyprus</option>
+                                            
+                                                <option value="154##Czech Republic">Czech Republic</option>
+                                            
+                                                <option value="155##Denmark">Denmark</option>
+                                            
+                                                <option value="156##Djibouti">Djibouti</option>
+                                            
+                                                <option value="157##Dominica">Dominica</option>
+                                            
+                                                <option value="158##Dominican Republic">Dominican Republic</option>
+                                            
+                                                <option value="323##East Timor">East Timor</option>
+                                            
+                                                <option value="159##Ecuador">Ecuador</option>
+                                            
+                                                <option value="160##Egypt">Egypt</option>
+                                            
+                                                <option value="161##El Salvador">El Salvador</option>
+                                            
+                                                <option value="162##Equatorial Guinea">Equatorial Guinea</option>
+                                            
+                                                <option value="163##Eritrea">Eritrea</option>
+                                            
+                                                <option value="164##Estonia">Estonia</option>
+                                            
+                                                <option value="165##Ethiopia">Ethiopia</option>
+                                            
+                                                <option value="166##Falkland Islands">Falkland Islands</option>
+                                            
+                                                <option value="232##Federated States of Micronesia">Federated States of Micronesia</option>
+                                            
+                                                <option value="167##Fiji">Fiji</option>
+                                            
+                                                <option value="168##Finland">Finland</option>
+                                            
+                                                <option value="169##France">France</option>
+                                            
+                                                <option value="170##French Guiana">French Guiana</option>
+                                            
+                                                <option value="171##French Polynesia">French Polynesia</option>
+                                            
+                                                <option value="172##Gabon">Gabon</option>
+                                            
+                                                <option value="174##Gaza Strip and West Bank">Gaza Strip and West Bank</option>
+                                            
+                                                <option value="175##Georgia">Georgia</option>
+                                            
+                                                <option value="176##Germany">Germany</option>
+                                            
+                                                <option value="177##Ghana">Ghana</option>
+                                            
+                                                <option value="178##Gibraltar">Gibraltar</option>
+                                            
+                                                <option value="179##Greece">Greece</option>
+                                            
+                                                <option value="180##Greenland">Greenland</option>
+                                            
+                                                <option value="181##Grenada">Grenada</option>
+                                            
+                                                <option value="182##Guadeloupe">Guadeloupe</option>
+                                            
+                                                <option value="183##Guam">Guam</option>
+                                            
+                                                <option value="184##Guatemala">Guatemala</option>
+                                            
+                                                <option value="185##Guinea">Guinea</option>
+                                            
+                                                <option value="186##Guinea-Bissau">Guinea-Bissau</option>
+                                            
+                                                <option value="187##Guyana">Guyana</option>
+                                            
+                                                <option value="188##Haiti">Haiti</option>
+                                            
+                                                <option value="190##Honduras">Honduras</option>
+                                            
+                                                <option value="191##Hong Kong">Hong Kong</option>
+                                            
+                                                <option value="192##Hungary">Hungary</option>
+                                            
+                                                <option value="193##Iceland">Iceland</option>
+                                            
+                                                <option value="194##India">India</option>
+                                            
+                                                <option value="195##Indonesia">Indonesia</option>
+                                            
+                                                <option value="196##Iran">Iran</option>
+                                            
+                                                <option value="197##Iraq">Iraq</option>
+                                            
+                                                <option value="198##Ireland">Ireland</option>
+                                            
+                                                <option value="199##Israel">Israel</option>
+                                            
+                                                <option value="200##Italy">Italy</option>
+                                            
+                                                <option value="201##Jamaica">Jamaica</option>
+                                            
+                                                <option value="202##Japan">Japan</option>
+                                            
+                                                <option value="203##Jordan">Jordan</option>
+                                            
+                                                <option value="204##Kazakhstan">Kazakhstan</option>
+                                            
+                                                <option value="205##Kenya">Kenya</option>
+                                            
+                                                <option value="206##Kiribati">Kiribati</option>
+                                            
+                                                <option value="207##Kuwait">Kuwait</option>
+                                            
+                                                <option value="208##Kyrgyzstan">Kyrgyzstan</option>
+                                            
+                                                <option value="209##Laos">Laos</option>
+                                            
+                                                <option value="210##Latvia">Latvia</option>
+                                            
+                                                <option value="211##Lebanon">Lebanon</option>
+                                            
+                                                <option value="212##Lesotho">Lesotho</option>
+                                            
+                                                <option value="213##Liberia">Liberia</option>
+                                            
+                                                <option value="214##Libya">Libya</option>
+                                            
+                                                <option value="215##Liechtenstein">Liechtenstein</option>
+                                            
+                                                <option value="216##Lithuania">Lithuania</option>
+                                            
+                                                <option value="217##Luxembourg">Luxembourg</option>
+                                            
+                                                <option value="218##Macau">Macau</option>
+                                            
+                                                <option value="219##Macedonia">Macedonia</option>
+                                            
+                                                <option value="220##Madagascar">Madagascar</option>
+                                            
+                                                <option value="221##Malawi">Malawi</option>
+                                            
+                                                <option value="222##Malaysia">Malaysia</option>
+                                            
+                                                <option value="223##Maldives">Maldives</option>
+                                            
+                                                <option value="224##Mali">Mali</option>
+                                            
+                                                <option value="225##Malta">Malta</option>
+                                            
+                                                <option value="226##Marshall Islands">Marshall Islands</option>
+                                            
+                                                <option value="227##Martinique">Martinique</option>
+                                            
+                                                <option value="228##Mauritania">Mauritania</option>
+                                            
+                                                <option value="229##Mauritius">Mauritius</option>
+                                            
+                                                <option value="230##Mayotte">Mayotte</option>
+                                            
+                                                <option value="231##Mexico">Mexico</option>
+                                            
+                                                <option value="233##Moldova">Moldova</option>
+                                            
+                                                <option value="234##Monaco">Monaco</option>
+                                            
+                                                <option value="235##Mongolia">Mongolia</option>
+                                            
+                                                <option value="325##Montenegro">Montenegro</option>
+                                            
+                                                <option value="236##Montserrat">Montserrat</option>
+                                            
+                                                <option value="237##Morocco">Morocco</option>
+                                            
+                                                <option value="238##Mozambique">Mozambique</option>
+                                            
+                                                <option value="134##Myanmar">Myanmar</option>
+                                            
+                                                <option value="239##Namibia">Namibia</option>
+                                            
+                                                <option value="240##Nauru">Nauru</option>
+                                            
+                                                <option value="241##Nepal">Nepal</option>
+                                            
+                                                <option value="242##Netherlands">Netherlands</option>
+                                            
+                                                <option value="243##Netherlands Antilles">Netherlands Antilles</option>
+                                            
+                                                <option value="244##New Caledonia">New Caledonia</option>
+                                            
+                                                <option value="245##New Zealand">New Zealand</option>
+                                            
+                                                <option value="246##Nicaragua">Nicaragua</option>
+                                            
+                                                <option value="247##Niger">Niger</option>
+                                            
+                                                <option value="248##Nigeria">Nigeria</option>
+                                            
+                                                <option value="249##North Korea">North Korea</option>
+                                            
+                                                <option value="250##Northern Mariana Islands">Northern Mariana Islands</option>
+                                            
+                                                <option value="251##Norway">Norway</option>
+                                            
+                                                <option value="252##Oman">Oman</option>
+                                            
+                                                <option value="253##Pakistan">Pakistan</option>
+                                            
+                                                <option value="254##Palau">Palau</option>
+                                            
+                                                <option value="255##Panama">Panama</option>
+                                            
+                                                <option value="256##Papua New Guinea">Papua New Guinea</option>
+                                            
+                                                <option value="257##Paraguay">Paraguay</option>
+                                            
+                                                <option value="258##Peru">Peru</option>
+                                            
+                                                <option value="259##Philippines">Philippines</option>
+                                            
+                                                <option value="260##Pitcairn Islands">Pitcairn Islands</option>
+                                            
+                                                <option value="261##Poland">Poland</option>
+                                            
+                                                <option value="262##Portugal">Portugal</option>
+                                            
+                                                <option value="263##Puerto Rico">Puerto Rico</option>
+                                            
+                                                <option value="264##Qatar">Qatar</option>
+                                            
+                                                <option value="265##Reunion">Reunion</option>
+                                            
+                                                <option value="266##Romania">Romania</option>
+                                            
+                                                <option value="267##Russia">Russia</option>
+                                            
+                                                <option value="268##Rwanda">Rwanda</option>
+                                            
+                                                <option value="269##Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                            
+                                                <option value="270##Saint Lucia">Saint Lucia</option>
+                                            
+                                                <option value="271##Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                            
+                                                <option value="272##Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                                            
+                                                <option value="273##Samoa">Samoa</option>
+                                            
+                                                <option value="274##San Marino">San Marino</option>
+                                            
+                                                <option value="275##Sao Tome and Principe">Sao Tome and Principe</option>
+                                            
+                                                <option value="276##Saudi Arabia">Saudi Arabia</option>
+                                            
+                                                <option value="277##Senegal">Senegal</option>
+                                            
+                                                <option value="278##Serbia and Montenegro (Yugoslavia)">Serbia and Montenegro (Yugoslavia)</option>
+                                            
+                                                <option value="279##Seychelles">Seychelles</option>
+                                            
+                                                <option value="280##Sierra Leone">Sierra Leone</option>
+                                            
+                                                <option value="281##Singapore">Singapore</option>
+                                            
+                                                <option value="282##Slovakia">Slovakia</option>
+                                            
+                                                <option value="283##Slovenia">Slovenia</option>
+                                            
+                                                <option value="284##Solomon Islands">Solomon Islands</option>
+                                            
+                                                <option value="285##Somalia">Somalia</option>
+                                            
+                                                <option value="286##South Africa">South Africa</option>
+                                            
+                                                <option value="287##South Korea">South Korea</option>
+                                            
+                                                <option value="324##South Sudan">South Sudan</option>
+                                            
+                                                <option value="288##Spain">Spain</option>
+                                            
+                                                <option value="289##Sri Lanka">Sri Lanka</option>
+                                            
+                                                <option value="290##Sudan">Sudan</option>
+                                            
+                                                <option value="291##Suriname">Suriname</option>
+                                            
+                                                <option value="292##Swaziland">Swaziland</option>
+                                            
+                                                <option value="293##Sweden">Sweden</option>
+                                            
+                                                <option value="294##Switzerland">Switzerland</option>
+                                            
+                                                <option value="295##Syria">Syria</option>
+                                            
+                                                <option value="296##Taiwan">Taiwan</option>
+                                            
+                                                <option value="297##Tajikistan">Tajikistan</option>
+                                            
+                                                <option value="298##Tanzania">Tanzania</option>
+                                            
+                                                <option value="299##Thailand">Thailand</option>
+                                            
+                                                <option value="173##The Gambia">The Gambia</option>
+                                            
+                                                <option value="189##The Holy See">The Holy See</option>
+                                            
+                                                <option value="300##Togo">Togo</option>
+                                            
+                                                <option value="301##Tonga">Tonga</option>
+                                            
+                                                <option value="302##Trinidad and Tobago">Trinidad and Tobago</option>
+                                            
+                                                <option value="303##Tunisia">Tunisia</option>
+                                            
+                                                <option value="304##Turkey">Turkey</option>
+                                            
+                                                <option value="305##Turkmenistan">Turkmenistan</option>
+                                            
+                                                <option value="306##Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                            
+                                                <option value="307##Tuvalu">Tuvalu</option>
+                                            
+                                                <option value="308##Uganda">Uganda</option>
+                                            
+                                                <option value="309##Ukraine">Ukraine</option>
+                                            
+                                                <option value="310##United Arab Emirates">United Arab Emirates</option>
+                                            
+                                                <option value="311##United Kingdom">United Kingdom</option>
+                                            
+                                                <option value="312##United States">United States</option>
+                                            
+                                                <option value="313##United States Virgin Islands">United States Virgin Islands</option>
+                                            
+                                                <option value="314##Uruguay">Uruguay</option>
+                                            
+                                                <option value="315##Uzbekistan">Uzbekistan</option>
+                                            
+                                                <option value="316##Vanuatu">Vanuatu</option>
+                                            
+                                                <option value="317##Venezuela">Venezuela</option>
+                                            
+                                                <option value="318##Vietnam">Vietnam</option>
+                                            
+                                                <option value="319##West Bank and Gaza Strip">West Bank and Gaza Strip</option>
+                                            
+                                                <option value="320##Western Sahara">Western Sahara</option>
+                                            
+                                                <option value="321##Yemen">Yemen</option>
+                                            
+                                                <option value="322##Zambia">Zambia</option>
+                                            
+                                                <option value="326##Zimbabwe">Zimbabwe</option>
                                                     
                                             </select>
                                             <p class="company-error-msg"></p>
@@ -653,133 +613,133 @@
                                             <label for="cboCity" class="visuallyhidden">Select District</label>
                                             <select class="form-control" name="cboCity" id="cboCity">
                                                 <option value="-1">Select District</option>
-                                                     <option value="2##Bagerhat">Bagerhat</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="3##Bandarban">Bandarban</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="7##Barguna">Barguna</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="4##Barishal">Barishal</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="5##Bhola">Bhola</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="6##Bogura">Bogura</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="1##Brahmanbaria">Brahmanbaria</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="8##Chandpur">Chandpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="9##Chapainawabganj">Chapainawabganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="10##Chattogram">Chattogram</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="11##Chuadanga">Chuadanga</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="13##Cox's Bazar">Cox's Bazar</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="12##Cumilla">Cumilla</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="14##Dhaka">Dhaka</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="15##Dinajpur">Dinajpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="16##Faridpur">Faridpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="17##Feni">Feni</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="18##Gaibandha">Gaibandha</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="19##Gazipur">Gazipur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="20##Gopalganj">Gopalganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="21##Habiganj">Habiganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="22##Jamalpur">Jamalpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="23##Jashore">Jashore</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="24##Jhalakathi">Jhalakathi</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="25##Jhenaidah">Jhenaidah</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="26##Joypurhat">Joypurhat</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="27##Khagrachhari">Khagrachhari</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="28##Khulna">Khulna</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="29##Kishoreganj">Kishoreganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="30##Kurigram">Kurigram</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="31##Kushtia">Kushtia</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="33##Laksmipur">Laksmipur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="32##Lalmonirhat">Lalmonirhat</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="34##Madaripur">Madaripur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="35##Magura">Magura</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="36##Manikganj">Manikganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="37##Meherpur">Meherpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="38##Moulvibazar">Moulvibazar</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="39##Munshiganj">Munshiganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="40##Mymensingh">Mymensingh</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="41##Naogaon">Naogaon</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="42##Narail">Narail</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="43##Narayanganj">Narayanganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="44##Narsingdi">Narsingdi</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="45##Natore">Natore</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="46##Netrokona">Netrokona</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="47##Nilphamari">Nilphamari</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="48##Noakhali">Noakhali</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="49##Pabna">Pabna</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="50##Panchagarh">Panchagarh</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="51##Patuakhali">Patuakhali</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="52##Pirojpur">Pirojpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="53##Rajbari">Rajbari</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="54##Rajshahi">Rajshahi</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="55##Rangamati">Rangamati</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="56##Rangpur">Rangpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="57##Satkhira">Satkhira</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="58##Shariatpur">Shariatpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="59##Sherpur">Sherpur</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="60##Sirajganj">Sirajganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="61##Sunamganj">Sunamganj</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="62##Sylhet">Sylhet</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="63##Tangail">Tangail</option>
-                                                      <!--selected="selected"--> 
-                                                     <option value="64##Thakurgaon">Thakurgaon</option>
+                                                <option value="2##Bagerhat">Bagerhat</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="3##Bandarban">Bandarban</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="7##Barguna">Barguna</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="4##Barishal">Barishal</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="5##Bhola">Bhola</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="6##Bogura">Bogura</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="1##Brahmanbaria">Brahmanbaria</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="8##Chandpur">Chandpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="9##Chapainawabganj">Chapainawabganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="10##Chattogram">Chattogram</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="11##Chuadanga">Chuadanga</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="13##Cox's Bazar">Cox's Bazar</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="12##Cumilla">Cumilla</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="14##Dhaka">Dhaka</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="15##Dinajpur">Dinajpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="16##Faridpur">Faridpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="17##Feni">Feni</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="18##Gaibandha">Gaibandha</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="19##Gazipur">Gazipur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="20##Gopalganj">Gopalganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="21##Habiganj">Habiganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="22##Jamalpur">Jamalpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="23##Jashore">Jashore</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="24##Jhalakathi">Jhalakathi</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="25##Jhenaidah">Jhenaidah</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="26##Joypurhat">Joypurhat</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="27##Khagrachhari">Khagrachhari</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="28##Khulna">Khulna</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="29##Kishoreganj">Kishoreganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="30##Kurigram">Kurigram</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="31##Kushtia">Kushtia</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="33##Laksmipur">Laksmipur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="32##Lalmonirhat">Lalmonirhat</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="34##Madaripur">Madaripur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="35##Magura">Magura</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="36##Manikganj">Manikganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="37##Meherpur">Meherpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="38##Moulvibazar">Moulvibazar</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="39##Munshiganj">Munshiganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="40##Mymensingh">Mymensingh</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="41##Naogaon">Naogaon</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="42##Narail">Narail</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="43##Narayanganj">Narayanganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="44##Narsingdi">Narsingdi</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="45##Natore">Natore</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="46##Netrokona">Netrokona</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="47##Nilphamari">Nilphamari</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="48##Noakhali">Noakhali</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="49##Pabna">Pabna</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="50##Panchagarh">Panchagarh</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="51##Patuakhali">Patuakhali</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="52##Pirojpur">Pirojpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="53##Rajbari">Rajbari</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="54##Rajshahi">Rajshahi</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="55##Rangamati">Rangamati</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="56##Rangpur">Rangpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="57##Satkhira">Satkhira</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="58##Shariatpur">Shariatpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="59##Sherpur">Sherpur</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="60##Sirajganj">Sirajganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="61##Sunamganj">Sunamganj</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="62##Sylhet">Sylhet</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="63##Tangail">Tangail</option>
+                                                 <!--selected="selected"--> 
+                                                <option value="64##Thakurgaon">Thakurgaon</option>
                                                              <!--selected="selected"--> 
                                             </select>
                                             <p class="company-error-msg"></p>
@@ -2486,7 +2446,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="business_license_no">Business/ Trade License No</label>
-                                            <input type="text" class="form-control" maxlength="30" name="business_license_no" id="business_license_no" placeholder="Business/ Trade License No" value="">
+                                            <input type="text" class="form-control" maxlength="30" name="business_license_no" id="business_license_no" required="required" placeholder="Business/ Trade License No" value="">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
@@ -2494,7 +2454,7 @@
                                             <label for="rl_no">RL No (Only for Recruiting Agency)</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">RL -</span>
-                                                <input type="text" class="form-control" maxlength="6" name="rl_no" id="rl_no" placeholder="Enter Number Only" value="" onkeypress="return isNumberKey(event)" onchange="return CheckNumber($('#rl_no').val())">
+                                                <input type="text" class="form-control" maxlength="6" name="rl_no" id="rl_no" required="required" placeholder="Enter Number Only" value="" onkeypress="return isNumberKey(event)" onchange="return CheckNumber($('#rl_no').val())">
                                             </div>
                                             <input name="hidRLNOStatus" id="hidRLNOStatus" value="" type="hidden">
                                         </div>
@@ -2502,7 +2462,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <label for="website_url">Website URL</label>
-                                            <input type="text" class="form-control" maxlength="50" name="website_url" id="website_url" placeholder="Type Website URL" value="">
+                                            <input type="text" class="form-control" maxlength="50" name="website_url" id="website_url" required="required" placeholder="Type Website URL" value="">
                                         </div>
                                     </div>
                                 </div>
@@ -2516,14 +2476,14 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="txtContactPerson">Contact Person's Name*</label>
-                                        <input type="text" class="form-control" maxlength="100" name="txtContactPerson" id="txtContactPerson" placeholder="Type contact person's name" value="">
+                                        <input type="text" class="form-control" maxlength="100" name="txtContactPerson" id="txtContactPerson" required="required" placeholder="Type contact person's name" value="">
                                         <p class="company-error-msg"></p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="txtDesignation">Contact Person's Designation*</label>
-                                        <input type="text" class="form-control" maxlength="100" name="txtDesignation" id="txtDesignation" placeholder="Type contact person's designation" value="">
+                                        <input type="text" class="form-control" maxlength="100" name="txtDesignation" id="txtDesignation" required="required" placeholder="Type contact person's designation" value="">
                                         <p class="company-error-msg"></p>
                                     </div>
                                 </div>
@@ -2532,25 +2492,15 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="txtContactEmail">Contact Person's Email*</label>
-                                        <input type="text" class="form-control" maxlength="45" name="txtContactEmail" id="txtContactEmail" placeholder="Type contact person's email" value="">
+                                        <input type="text" class="form-control" maxlength="45" name="txtContactEmail" id="txtContactEmail" required="required" placeholder="Type contact person's email" value="">
                                         <p class="company-error-msg"></p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="txtContactMobile">Contact Person's Mobile</label>
-                                        <input type="tel" class="form-control" placeholder="Mobile number" id="txtContactMobile" name="txtContactMobile" value="" maxlength="13" onkeypress="return isNumberKey(event)">
+                                        <input type="tel" class="form-control" placeholder="Mobile number" id="txtContactMobile" required="required" name="txtContactMobile" value="" maxlength="13" onkeypress="return isNumberKey(event)">
                                     </div>
-                                    <script>
-                                        // superplaceholder({
-                                        //     el: txtContactMobile,
-                                        //     sentences: ['017XXXXXXXX', '018XXXXXXXX', '019XXXXXXXX', '015XXXXXXXX', '016XXXXXXXX', '013XXXXXXXX'],
-                                        //     options: {
-                                        //         loop: true,
-                                        //         startOnFocus: false
-                                        //     }
-                                        // })
-                                    </script>
                                 </div>
                             </div>
                             </section>
@@ -2559,20 +2509,8 @@
                             <section>
                             <div class="text-right d-flex justify-content-end align-items-end">
                                     <input type="submit" class="btn-continue" value="Continue">
-                                <!-- <button class="btn continue" onclick="return IsPricingPolicyAccepted_new(); ga('send', 'event', 'New Account', 'click', 'Continue', 1);" disabled=""> Continue <i class="icon-angle-right"></i></button> -->
                             </div>
                             </section>
-                            <input type="hidden" name="hidEntrepreneur" id="hidEntrepreneur" value="">
-                            <input type="hidden" name="hidCity" id="hidCity" value="0">
-                            <input type="hidden" name="hidArea" id="hidArea" value="">
-                            <input type="hidden" name="hidIndustry" id="hidIndustry" value="">
-        
-                            <input type="hidden" name="facilityForDisability" id="facilityForDisability" value="">
-                            <input type="hidden" name="haveDisaibilityInclusion" id="haveDisaibilityInclusion" value="">
-                            <input type="hidden" name="haveAnySupport" id="haveAnySupport" value="">
-                            <input type="hidden" name="provideTrainingForEmployee" id="provideTrainingForEmployee" value="">
-                            <input type="hidden" name="whatFacilityCompanyHave" id="whatFacilityCompanyHave" value="">
-
                         </form>
                     </div>
                 </div>
